@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.mainLeft{
+    text-align: left;
+    text-indent: 40px;
+    margin-left: 20px;
+    flex:3;
+    font-size: 20px;
+    line-height: 30px;
+}
+.topIcon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: black;
+    cursor: pointer;
+  }
+.mainCenter{
+    font-size: 20px;
+    margin-right: 10px;
+    color:black;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+}
+.mainRight{
+    margin:50px;
+    text-align: right;
+    margin-right: 50px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.main-footer {
+    color: black;
+    position: fixed;
+    padding:70 px 0;
+    bottom: 10px;
+    width: 95%;
+    padding: 0 15px;
+
+  }
+  .row{
+      display:flex;
+      align-items: center;
+  }
