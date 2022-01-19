@@ -27,6 +27,11 @@ function Topbar() {
               </NavLink>
             </li>
             <li className="nav-item">
+              <NavLink exact to="/Reservation" activeClassName="active" className="nav-links" onClick={handleClick}>
+                Rezerwacje
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink exact to="/ContactPage" activeClassName="active" className="nav-links" onClick={handleClick}>
                 Kontakt
               </NavLink>
