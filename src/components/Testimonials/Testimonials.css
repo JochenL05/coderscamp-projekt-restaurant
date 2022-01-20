@@ -1,3 +1,8 @@
+:root {
+  --background-color: white;
+  --font-color: black;
+}
+
 .carousel-root {
   width: 65% ;
   margin: auto ;
@@ -5,8 +10,8 @@
 }
 
 .carousel .slide {
-  background: #fff ;
-  color: black;
+  background: var(--background-color) ;
+  color: var(--font-color);
   height: 100%;
 }
 
@@ -16,7 +21,7 @@
 }
 
 .myCarousel {
-  background: #ffffff;
+  background: var(--background-color);
   margin-top: 5%;
   width: 55%;
   margin-left: auto;
@@ -105,7 +110,7 @@
     display: none ;
   }
   .myCarousel {
-    background: #fafafa;
+    background: var(--background-color);
     margin-top: 9%;
     width: 88%;
     margin-left: auto;
