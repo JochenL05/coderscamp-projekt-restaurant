@@ -1,17 +1,17 @@
 .carousel-root {
-  width: 65% !important;
-  margin: auto !important;
-  margin-top: 5% !important;
+  width: 65% ;
+  margin: auto ;
+  margin-top: 5% ;
 }
 
 .carousel .slide {
-  background: #fff !important;
+  background: #fff ;
   color: black;
   height: 100%;
 }
 
 .carousel .slide img {
-  width: 140px !important;
+  width: 140px ;
   border-radius: 50%;
 }
 
@@ -30,8 +30,8 @@
 }
 
 .carousel .control-dots {
-  padding-left: 5px !important;
-  bottom: 5% !important;
+  padding-left: 5px ;
+  bottom: 5% ;
 }
 
 .myCarousel h3 {
@@ -52,8 +52,8 @@
 }
 
 .myCarousel p {
-  font-weight: 100 !important;
-  line-height: 30px !important;
+  font-weight: 100 ;
+  line-height: 30px ;
   color: #222;
   font-size: 15px;
   font-family: sans-serif;
@@ -78,16 +78,16 @@
 }
 
 .carousel .control-dots .dot {
-  box-shadow: none !important;
-  background: #454545 !important;
+  box-shadow: none ;
+  background: #454545 ;
   outline: 0;
 }
 
 .carousel.carousel-slider .control-arrow {
-  background: #000 !important;
-  height: 50px !important;
+  background: #000 ;
+  height: 50px ;
   position: absolute;
-  top: 35% !important;
+  top: 35% ;
 }
 
 .App {
@@ -97,12 +97,12 @@
 @media only screen and (max-width: 940px) {
   .carousel-root {
     outline: 0;
-    width: 95% !important;
-    margin: auto !important;
+    width: 95% ;
+    margin: auto ;
   }
 
   .carousel.carousel-slider .control-arrow {
-    display: none !important;
+    display: none ;
   }
   .myCarousel {
     background: #fafafa;
@@ -119,7 +119,7 @@
   }
 
     /* .carousel .slide img {
-    width: 24% !important;
+    width: 24% ;
     border-radius: 50%;
   } */
 }
