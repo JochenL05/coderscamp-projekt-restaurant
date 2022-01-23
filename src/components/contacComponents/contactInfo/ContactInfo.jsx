@@ -1,3 +1,4 @@
+import React from "react";
 import ContactForm from "../contactForm/ContactForm";
 import "./contactInfo.css";
 
