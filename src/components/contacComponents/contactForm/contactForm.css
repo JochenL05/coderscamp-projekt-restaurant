@@ -1,20 +1,24 @@
 .contactTitle{
     font-size: 22px;
 }
+.sectionTitle{
+    font-size: 18px;
+}
+
 .formGroup{
     width: 100%;
 }
 
 
 label {
-    font-size: 1.8em;
+    font-size: 1em;
 }
 
 input,
 textarea {
-    width: 100%;
-    font-size: 2rem;
-    padding: 1.2rem;
+    width: 70%;
+    font-size: 1rem;
+    padding: 10px;
     background-color:lightgray;
     outline: none;
     border: none;
@@ -31,17 +35,34 @@ textarea :hover{
 }
 
 button{
+
+margin-top: 10px;
 background-color: black;
 color: white;
-font-size: 2rem;
+font-size: 1.5rem;
 display: inline-block;
 outline: none;
 border: none;
-padding: 1rem 4rem;
+padding: 10px 20px;
 border-radius: 8px;
 cursor: pointer;
 }
 
 button:hover{ 
   background-color: coral;
+}
+
+@media screen and (max-width: 960px) {
+    input,
+textarea {
+    width: 50%;
+    font-size: 1rem;
+    padding: 15px;
+}
+button{
+    padding: 7px 15px;
+    font-size: 1rem;
+
+}
+
 }

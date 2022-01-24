@@ -2,13 +2,17 @@
     font-size: 25px;
 }
 
+.sectionTitle{
+    font-size: 18px;
+}
+
 .locationItems{
     margin-top: 50px;
     
 }
 .locationIcon{
     margin-right: 30px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 
@@ -19,11 +23,13 @@
     margin-top: 10px;
     justify-content: center;
     position: relative;
+    align-items: center;
 }
 
 .location  {
     display: flex;
     line-height: 45px;
+    align-items: center;
 
 
 }
@@ -31,7 +37,7 @@
   .left {
     width: 100%;
     max-width: 500px;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 15px;
   }
   .right {
@@ -48,6 +54,19 @@
     gap: 5rem;
     margin-top: 7rem;
     position: relative;
+}
+
+@media screen and (max-width: 960px) {
+  .left{
+font-size: 14px;  }
+
+.left-wraper{
+  margin-left: 30px;
+}
+.container{
+  flex-direction: column;
+  align-items: center;
+}
 }
 
 

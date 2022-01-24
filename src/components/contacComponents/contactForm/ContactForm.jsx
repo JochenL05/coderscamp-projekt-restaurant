@@ -4,6 +4,7 @@ import "./contactForm.css";
 export default function ContactForm() {
   return (
     <div>
+      <div className="sectionTitle">Get in touch</div>
       <div className="formGroup">
         <label className="contactForm">
           <div className="formGroup">

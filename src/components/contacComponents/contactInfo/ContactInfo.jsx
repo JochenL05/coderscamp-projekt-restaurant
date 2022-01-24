@@ -7,7 +7,7 @@ export default function ContactInfo() {
     <div className="container">
       <div className="left-wraper">
         <div className="left">
-          <div className="contactAdress"></div>
+          <div className="sectionTitle">Location</div>
           <div className="locationItems">
             <div className="location">
               <i className="locationIcon fas fa-location-arrow"></i>
