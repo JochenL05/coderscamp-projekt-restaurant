@@ -2,15 +2,18 @@ import "./footer.css";
 
 export default function Footer() {
     return (
-    <div className="main-footer">
-        <div className="container">
+    // <div className="main-footer">
             <div className="row">
             <div className="mainLeft">
                 <h4>Newsletter</h4>
                 <form>
-                    <input type="email"/>
+                    <input 
+                    type="text"
+                    name="email"
+                    placecholder="email"
+                    />
                     <button type="submit">email<i class="fas fa-envelope-square"></i></button>
-                </form>
+                </form> 
             </div>
         <div className="mainCenter">
             <h4><i class="fas fa-clock"></i>
@@ -25,8 +28,7 @@ export default function Footer() {
         <i className="topIcon fab fa-youtube"></i>
     </div>
     </div>
-    </div>
-    </div>
+    // </div>
 
     );
     }

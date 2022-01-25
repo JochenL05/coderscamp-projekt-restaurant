@@ -2,14 +2,25 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    justify-content: space-around;
+}
+.row{
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    color: black;
+    padding:70 px 0;
+    bottom: 10px;
+    width: 100%;
+    padding: 0 15px;
 }
 .mainLeft{
     text-align: left;
     text-indent: 40px;
     margin-left: 20px;
-    flex:3;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 40px;
 }
 .topIcon {
     font-size: 20px;
@@ -19,29 +30,44 @@
   }
 .mainCenter{
     font-size: 20px;
-    margin-right: 10px;
+    /* margin-right: 200px; */
+    /* margin-left: 200px; */
     color:black;
     cursor: pointer;
-    text-align: center;
-    line-height: 30px;
+    line-height: 40px;
+    
 }
 .mainRight{
     margin:50px;
     text-align: right;
     margin-right: 50px;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 40px;
 }
-.main-footer {
-    color: black;
-    position: fixed;
-    padding:70 px 0;
-    bottom: 10px;
-    width: 95%;
-    padding: 0 15px;
-
+input{
+    width: 200px;
+    height: 20px;
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 10px;
+}
+  @media screen and (max-width: 960px) {
+ .mainLeft {
+     /* width: 100%; */
+     font-size: 10px;
+     /* margin: 10px; */
+  }
+  .mainCenter{
+    font-size: 10px;
+    /* margin: 10px; */
+  }
+  .mainRight{
+    font-size: 10px;
+    /* margin: 10px; */
   }
   .row{
-      display:flex;
-      align-items: center;
+      flex-wrap: nowrap;
+      max-height: 150px;
   }
+  
+}
