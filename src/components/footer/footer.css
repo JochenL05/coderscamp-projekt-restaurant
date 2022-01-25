@@ -6,10 +6,17 @@
 .mainLeft{
     text-align: left;
     text-indent: 40px;
-    margin-left: 20px;
-    flex:3;
+    display: flex;
+    /* margin-left: auto; */
+    /* flex:3; */
     font-size: 20px;
     line-height: 30px;
+    flex: 2;
+    
+}
+button{
+    width: 4fr;
+    height: 25px;
 }
 .topIcon {
     font-size: 20px;
@@ -19,18 +26,20 @@
   }
 .mainCenter{
     font-size: 20px;
-    margin-right: 10px;
+    /* margin-right: auto; */
     color:black;
     cursor: pointer;
     text-align: center;
     line-height: 30px;
+    flex: 2;
 }
 .mainRight{
     margin:50px;
     text-align: right;
-    margin-right: 50px;
+    /* margin-right: auto; */
     font-size: 20px;
     line-height: 30px;
+    flex: 1;
 }
 .main-footer {
     color: black;
@@ -44,4 +53,27 @@
   .row{
       display:flex;
       align-items: center;
+  }
+  @media only screen and (max-width: 950px) {
+      .mainLeft{
+          font-size: 15px;
+          flex-wrap: nowrap;
+          margin-left: 50px;
+      }
+      .mainCenter{
+        font-size: 15px;
+        flex-wrap: nowrap;
+    }
+    .mainRight{
+        font-size: 15px;
+        flex-wrap: nowrap;
+    }
+    .main-footer{
+        font-size: 15px;
+        flex-wrap: nowrap;
+    }
+    .row{
+        flex-wrap: nowrap;
+        align-items: center;
+    }
   }
