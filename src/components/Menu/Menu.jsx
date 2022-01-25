@@ -30,13 +30,18 @@ const Menu = ({ name, desc }) => {
           />
           <Item
             name="Sweet Home Pineapple"
-            desc="Flour, Tomato Sauce, Ham, Cheese, and most important Pineapple. There is small group of people that like this one, which makes it ideal for dates. If you want to eat in silence just get this one. Your partner will sit in front of you, looking at you with open mouth, probably being disgusted BUT all of this for a moment in silence with your pizza!"
+            desc="Your partner will sit in front of you, looking at you with open mouth, probably being disgusted BUT all of this for a moment in silence with your pizza!"
             price={11.0}
             img={Alonepizza}
           />
-          <Item name="Kiwi" desc="Kinda yeah, we can do this one, but... please don't." price={100.0} img={Kiwi} />
           <Item
-            name="Pepperoni"
+            name="Kiwi"
+            desc="Kinda yeah, we can do this one, but... please don't."
+            price={100.0}
+            img={Kiwi}
+          />
+          <Item
+            name="Unicorn"
             desc="Flour, Tomato Sauce and lots of cheeses. I'm to lazy to think about description for this one. Just get this for kids. Yeah for kids."
             price={17.7}
             img={Unicorn}
