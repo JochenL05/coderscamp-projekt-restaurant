@@ -1,0 +1,54 @@
+.contactTitle{
+    font-size: 25px;
+}
+
+.locationItems{
+    margin-top: 50px;
+    
+}
+.locationIcon{
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin-top: 10px;
+    justify-content: center;
+    position: relative;
+}
+
+.location  {
+    display: flex;
+    line-height: 45px;
+
+
+}
+
+  .left {
+    width: 100%;
+    max-width: 500px;
+    font-size: 20px;
+    line-height: 15px;
+  }
+  .right {
+    align-items: center;
+    margin-right: 30px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 12px;
+    padding-left: 3rem; 
+  }
+
+.left-wraper{
+    display: flex;
+    gap: 5rem;
+    margin-top: 7rem;
+    position: relative;
+}
+
+
+
