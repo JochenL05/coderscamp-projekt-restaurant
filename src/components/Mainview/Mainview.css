@@ -5,10 +5,12 @@
 .main {
   height: calc(var(--component-lenght)*2);
   width:100%;
-  background-image: url("https://t4.ftcdn.net/jpg/02/37/82/35/240_F_237823505_hxD7SRiYLVC647y1Pr8vKk8zm3jzkmRI.jpg")
+  background-image: url("https://t4.ftcdn.net/jpg/02/37/82/35/240_F_237823505_hxD7SRiYLVC647y1Pr8vKk8zm3jzkmRI.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
-.opener {
+.main__title {
   height: var(--component-lenght);
   width: 100%;
   display: block;
@@ -16,7 +18,7 @@
   line-height: var(--component-lenght);
 }
 
-.click {
+.main__button {
   background-color: #fff;
   border: 0px solid #000000;
   border-radius: 1.5rem;
@@ -35,13 +37,13 @@
   touch-action: manipulation;
 }
 
-.click:hover {
+.main__button:hover {
   background-color: #06073d;
   color: #fff;
 }
 
 @media (min-width: 768px) {
-  .click {
+  .main__button {
     font-size: 1.125rem;
     padding: 1rem 2rem;
   }

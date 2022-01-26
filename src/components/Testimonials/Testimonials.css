@@ -39,7 +39,7 @@
   bottom: 5% ;
 }
 
-.myCarousel h3 {
+.myCarousel__person {
   color: #222;
   font-weight: 100;
   letter-spacing: 0.5px;
@@ -48,7 +48,7 @@
   font-size: 17px;
 }
 
-.myCarousel h4 {
+.myCarousel__profession {
   margin-top: 0;
   padding-top: 0;
   font-weight: 500;
@@ -56,7 +56,7 @@
   font-size: 15px;
 }
 
-.myCarousel p {
+.myCarousel__description {
   font-weight: 100 ;
   line-height: 30px ;
   color: #222;
@@ -65,7 +65,7 @@
   max-height: 70px;
 }
 
-.myCarousel p:before {
+.myCarousel__description:before {
   content: "“";
   color: #aaa;
   font-size: 26px;
@@ -73,7 +73,7 @@
   font-weight: 100;
 }
 
-.myCarousel p:after {
+.myCarousel__description:after {
   content: "”";
   color: #aaa;
   font-size: 26px;
@@ -109,22 +109,4 @@
   .carousel.carousel-slider .control-arrow {
     display: none ;
   }
-  .myCarousel {
-    background: var(--background-color);
-    margin-top: 9%;
-    width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10%;
-    padding-bottom: 12.5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    border: 2px solid #ddd;
-    height: 270px;
-  }
-
-    /* .carousel .slide img {
-    width: 24% ;
-    border-radius: 50%;
-  } */
 }
