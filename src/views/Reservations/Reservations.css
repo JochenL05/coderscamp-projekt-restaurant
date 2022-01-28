@@ -37,7 +37,7 @@ body {
 }
 
 .form h1 {
-  font-size: 1.8rem;
+  font-size: 6vw;
   text-align: center;
   width: 80%;
   margin-bottom: 1rem;
@@ -55,6 +55,17 @@ body {
   font-size: 0.8rem;
   margin-bottom: 6px;
   color: var(--text-color-black);
+}
+
+select {
+  display: block;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  border: none;
+  margin-top: 0.5em;
 }
 
 .form-input {
