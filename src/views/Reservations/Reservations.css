@@ -4,8 +4,8 @@
   --text-color-black: #0A0A0B;
   --text-color-grey: #B9B7BD;
   --button-color: #FB7C5C;
+  --font-size: 1.5rem;
 }
-
 
 * {
   margin: 0;
@@ -37,7 +37,7 @@ body {
 }
 
 .form h1 {
-  font-size: 6vw;
+  font-size: var(--font-size);
   text-align: center;
   width: 80%;
   margin-bottom: 1rem;
@@ -94,4 +94,22 @@ select {
   border: none;
   color: var(--text-color-black);
   font-size: 1rem;
+}
+
+@media (min-width:640px) and (max-width:1023px) {
+.form h1  {
+  font-size: 1.5rem;
+ }
+}
+
+@media (min-width:1024px) and (max-width:1279px) {
+.form h1 {
+  font-size: 1.7rem;
+ }
+}
+
+@media (min-width:1280px) {
+.form h1 {
+  font-size: 2rem;
+ }
 }
