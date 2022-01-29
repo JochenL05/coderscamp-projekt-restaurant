@@ -1,73 +1,30 @@
-.contactTitle{
-    font-size: 25px;
+.contact {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+  gap: 5rem;
 }
 
-.sectionTitle{
-    font-size: 18px;
+.contact_info {
+  display: flex;
+  flex-direction: column;
 }
 
-.locationItems{
-    margin-top: 50px;
-    
-}
-.locationIcon{
-    margin-right: 30px;
-    font-size: 20px;
+.contact_info-header {
+  margin-bottom: 3rem;
 }
 
-
-.container{
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    margin-top: 10px;
-    justify-content: center;
-    position: relative;
-    align-items: center;
+.contact_info-piece {
+  display: flex;
 }
-
-.location  {
-    display: flex;
-    line-height: 45px;
-    align-items: center;
-
-
-}
-
-  .left {
-    width: 100%;
-    max-width: 500px;
-    font-size: 16px;
-    line-height: 15px;
-  }
-  .right {
-    align-items: center;
-    margin-right: 30px;
-    max-width: 500px;
-    width: 100%;
-    border-radius: 12px;
-    padding-left: 3rem; 
-  }
-
-.left-wraper{
-    display: flex;
-    gap: 5rem;
-    margin-top: 7rem;
-    position: relative;
+.contact_info-piece > * {
+  display: flex;
+  margin: 1em;
 }
 
 @media screen and (max-width: 960px) {
-  .left{
-font-size: 14px;  }
-
-.left-wraper{
-  margin-left: 30px;
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-.container{
-  flex-direction: column;
-  align-items: center;
-}
-}
-
-
-
