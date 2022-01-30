@@ -1,15 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import "./loginForm.css";
 
-export default function LoginForm() {
+// eslint-disable-next-line react/prop-types
+export default function LoginForm({ Login, error }) {
+  const [details, setDetails] = useState({ name: "", email: "", password: "" });
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+
+    Login(details);
+  };
   return (
-    <div className="loginForm">
-      <div className="title"> Login</div>
-      <div className="wraper">
-        <input type="text" name="username" placeholder="Username" size="10" />
-        <input type="text" name="password" placeholder="Password" size="10" />
-        <button type="submit">Sing in</button>
+    <form className="loginForm" onSubmit={submitHandler}>
+      <h1 className="title"> Login</h1>
+      {error != "" ? <div className="error">{error}</div> : ""}
+      <div className="form-group">
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          size="10"
+          onChange={(e) => setDetails({ ...details, name: e.target.value })}
+          value={details.name}
+        />
       </div>
-    </div>
+      <div className="form-group">
+        <input
+          type="text"
+          name="email"
+          placeholder="Email"
+          size="10"
+          onChange={(e) => setDetails({ ...details, email: e.target.value })}
+          value={details.email}
+        />
+      </div>
+      <div className="form-group">
+        <input
+          type="password"
+          name="password"
+          placeholder="Password"
+          size="10"
+          onChange={(e) => setDetails({ ...details, password: e.target.value })}
+          value={details.password}
+        />
+      </div>
+      <button className="login-button" type="submit">
+        Sign in
+      </button>
+    </form>
   );
 }

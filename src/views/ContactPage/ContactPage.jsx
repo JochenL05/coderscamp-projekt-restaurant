@@ -1,4 +1,3 @@
-//import ContactForm from "../../components/contacComponents/contactForm/ContactForm";
 import ContactInfo from "../../components/contacComponents/contactInfo/ContactInfo";
 import ContactSection from "../../components/contacComponents/contactSection/ContactSection";
 import MapContainer from "../../components/contacComponents/googleMap/GoogleMap";
