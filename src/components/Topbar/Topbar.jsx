@@ -22,17 +22,22 @@ function Topbar() {
               </NavLink>
             </li>
             <li className="nav-item">
+              <NavLink exact to="/menu" activeClassName="active" className="nav-links" onClick={handleClick}>
+                Menu
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink exact to="/about" activeClassName="active" className="nav-links" onClick={handleClick}>
                 O nas
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink exact to="/Reservation" activeClassName="active" className="nav-links" onClick={handleClick}>
+              <NavLink exact to="/reservation" activeClassName="active" className="nav-links" onClick={handleClick}>
                 Rezerwacje
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink exact to="/ContactPage" activeClassName="active" className="nav-links" onClick={handleClick}>
+              <NavLink exact to="/contact-page" activeClassName="active" className="nav-links" onClick={handleClick}>
                 Kontakt
               </NavLink>
             </li>
