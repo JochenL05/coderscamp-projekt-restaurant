@@ -1,12 +1,12 @@
 import React from "react";
-import ContactForm from "../contactForm/ContactForm";
+import ContactForm from "../ContactForm/ContactForm";
 import "./contactInfo.css";
 
 const ContactInfo = () => {
   return (
     <div className="contact">
       <div className="contact_info">
-        <div className="contact_info-header">Location</div>
+        <h2 className="contact_info-header">Location</h2>
         <div className="contact_info-piece">
           <i className="locationIcon fas fa-location-arrow"></i>
           <p>Stary Rynek 37, Poznań</p>
