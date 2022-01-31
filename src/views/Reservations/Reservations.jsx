@@ -39,8 +39,9 @@ const Reservations = () => {
               name="phone"
               className="form-input"
               placeholder="Phone"
-              {...register("phone", { required: "Phone required" })}
+              {...register("phone", { required: true })}
             />
+            {errors.name && <p>This field is required</p>}
           </div>
           <div className="form-inputs">
             <label className="form-label">* Email</label>
@@ -49,7 +50,12 @@ const Reservations = () => {
               name="email"
               className="form-input"
               placeholder="Email"
+              {...register("email", {
+                required: true,
+                pattern: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
+              })}
             />
+            {errors.name && <p>This field is required</p>}
           </div>
           <div className="form-inputs">
             <label className="form-label">* Date</label>
@@ -58,7 +64,9 @@ const Reservations = () => {
               name="date"
               className="form-input"
               placeholder="Date"
+              {...register("date", { required: true })}
             />
+            {errors.name && <p>This field is required</p>}
           </div>
           <div className="form-inputs">
             <label className="form-label">* Time</label>
@@ -67,17 +75,20 @@ const Reservations = () => {
               name="time"
               className="form-input"
               placeholder="Time"
+              {...register("time", { required: true })}
             />
+            {errors.name && <p>This field is required</p>}
           </div>
           <div className="form-inputs">
             <label className="form-label">
               * Choose a table
-              <select>
+              <select {...register("table", { required: true })}>
                 <option>For 8 people</option>
                 <option>For 6 people</option>
                 <option>For 5 people</option>
                 <option>For 4 people</option>
               </select>
+              {errors.name && <p>This field is required</p>}
             </label>
           </div>
           <div className="form-inputs">
