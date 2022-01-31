@@ -1,15 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
-import Homepage from './views/Homepage/Homepage';
 import Footer from './components/footer/Footer'
-import Register from './components/register/Register';
+import Form from './components/Form';
+import Topbar from './components/Topbar/Topbar'
 
 function App() {
   return (
     <div className="App">
-      <Homepage />
+      <Topbar/>
+      <Form/>
       <Footer/>
-      <Register/>
     </div>
   );
 }

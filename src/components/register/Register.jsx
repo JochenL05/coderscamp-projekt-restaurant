@@ -1,9 +1,14 @@
 import './register.css'
+import validate from './validate'
+import useForm from './useForm'
 
-export default function Register() {
+const Register = () => {
+
+    const {handleChange,values,handleSubmit,errors} = useForm(validate);
+
   return( 
   <div className="mainRegister">
-    <div className="form">
+    <div className="form" >
     <h1><p>Get started with us today!</p>
     <p>Register</p>
     </h1>
@@ -12,8 +17,13 @@ export default function Register() {
     <i className="topIcon fas fa-user"></i>
         <input 
         type="text"
-        name="Usermane"
-        placeholder="username"/>
+        name="username"
+        placeholder="username"
+        id='username'
+            value={values.username}
+            onChange={handleChange} 
+        />
+        {errors.username && <p className="error">{errors.username}</p>}
 
     </label>
     </div>
@@ -23,78 +33,79 @@ export default function Register() {
         <input 
         type="email"
         name="email"
-        placeholder="adress"/>
+        placeholder="email adress"
+        id='email'
+            value={values.email}
+            onChange={handleChange} 
+        />
+        {errors.email && <p className="error">{errors.email}</p>}
     </label>
     </div>
     <div className="inputs">
     <label className="data">
     <i className="topIcon fas fa-lock"></i>
         <input 
-        type="text"
-        name="Password"
-        placeholder="password"/>
+        type="password"
+        name="password1"
+        placeholder="password"
+        id= 'password1'
+            value={values.password1}
+            onChange = {handleChange}
+        />
+        {errors.password1 && <p className="error">{errors.password1}</p>}
     </label>
     </div>
     <div className="inputs">
     <label className="data">
     <i className="topIcon fas fa-lock"></i>
         <input 
-        type="text"
-        name="password"
-        placeholder="confirm password"/>
+        type="password"
+        name="password2"
+        placeholder="confirm password"
+        id="password2"
+            value={values.password2}
+            onChange={handleChange} 
+        />
+        {errors.password2 && <p className="error">{errors.password2}</p>}
     </label>
+    <button onClick ={handleSubmit} className="submit" formNoValidate>
+     Register
+     </button>
     </div>
-    <button className="inputButton" type="submit">
-        Register
-    </button>
+     {/* <button className="submit" onSubmit ={handleSubmit}>
+     Register
+     </button> */}
     </div>
   </div>
     )
 }
 
+export default Register
 
 
-// import './register.css'
-// import React from 'react';
+    // const handleFormSubmit = async (event) =>{
+    //     event.preventDefault();
+    //     // setErrors (validate(values));
+    //     console.log('form submitted', )
+    // };
+    
+    // const [values,setValues] = useState({
+    //     username:'',
+    //     email:'',
+    //     password1:'',
+    //     password2:'',
 
-// export default function Register() {
-//   return (
-//   <div className="mainRegister">
-//   <div className="registerTittle">
-//   <h1>
-//       <p>Get started with us today</p>
-//       <p>Create your account</p></h1>
-//   <div className="inputs">
-//   <i className="topIcon fas fa-user"></i>
-//       <input 
-//       type="text"
-//       name="username"
-//       placeholder= "enter your username"/>
-//   </div>
-//   <div className="inputs">
-//   <label><i className="topIcon fas fa-envelope"></i></label>
-//       <input className="registerInput"
-//       type="text"
-//       name="email"
-//       placeholder="enter your email"/>
-//   </div>
-//   <div className="inputs">
-//   <label><i className="topIcon fas fa-lock"></i></label>
-//       <input className="registerInput"
-//       type="text"
-//       name="email"
-//       placeholder="password"/>
-//   </div>
-//   <div className="inputs">
-//   <label><i className="topIcon fas fa-lock"></i></label>
-//       <input className="registerInput"
-//       type="text"
-//       name="email"
-//       placeholder="Confirm your password"/>
-//   </div>
-//   <button className="registerButton">Register</button>
+    // });
 
-//     </div> 
-//   </div>
-//   )
-// }
+    // const [errors, setErrors] = useState(null);
+
+    // const handleChange = (event) => {
+    //     setValues({
+    //         ...values,
+    //         [event.target.name]: event.target.value,
+    //     })
+    // }
+
+
+
+
