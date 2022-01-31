@@ -1,14 +1,25 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 import "./Reservations.css";
 import Topbar from "../../components/Topbar/Topbar";
 import Footer from "../../components/Footer/Footer";
 
 const Reservations = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
     <div>
       <Topbar />
       <div className="form-content-right">
-        <form className="form">
+        <form onSubmit={handleSubmit(onSubmit)} className="form">
           <h1>Make a reservation</h1>
           <div className="form-inputs">
             <label className="form-label">* Name</label>
@@ -17,7 +28,9 @@ const Reservations = () => {
               name="name"
               className="form-input"
               placeholder="Name"
+              {...register("name", { required: true })}
             />
+            {errors.name && <p>This field is required</p>}
           </div>
           <div className="form-inputs">
             <label className="form-label">* Phone</label>
@@ -26,6 +39,7 @@ const Reservations = () => {
               name="phone"
               className="form-input"
               placeholder="Phone"
+              {...register("phone", { required: "Phone required" })}
             />
           </div>
           <div className="form-inputs">
