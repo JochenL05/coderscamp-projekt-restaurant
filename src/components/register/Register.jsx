@@ -9,9 +9,8 @@ const Register = () => {
   return( 
   <div className="mainRegister">
     <div className="form" >
-    <h1><p>Get started with us today!</p>
-    <p>Register</p>
-    </h1>
+    <h2>Get started with us today!</h2>
+    <h1>Register</h1>
     <div className="inputs">
     <label className="data">
     <i className="topIcon fas fa-user"></i>
