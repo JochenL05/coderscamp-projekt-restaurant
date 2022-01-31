@@ -1,7 +1,7 @@
 import React from "react";
 import GoogleMapReact from "google-map-react";
 import "./googleMap.css";
-import API_KEY from "../../../apikey";
+import API_KEY from "./apikey";
 
 const Marker = () => {
   return <div className="pin"></div>;

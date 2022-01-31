@@ -4,8 +4,8 @@ import "./contactForm.css";
 export default function ContactForm() {
   return (
     <div>
-      <div className="sectionTitle">Get in touch</div>
       <div className="formGroup">
+        <h2 className="contact_info-header">Get in touch</h2>
         <label className="contactForm">
           <div className="formGroup">
             <input
@@ -24,12 +24,14 @@ export default function ContactForm() {
           <div className="formGroup">
             <input
               type="text"
-              name="username"
-              placeholder="Username"
+              name="message"
+              placeholder="How can we help?"
               size="40"
             />
           </div>
-          <button type="submit">SEND</button>
+          <button className="buttonContact" type="submit">
+            SEND
+          </button>
         </label>
       </div>
     </div>
