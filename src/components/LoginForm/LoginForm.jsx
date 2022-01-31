@@ -47,6 +47,7 @@ export default function LoginForm({ Login, error }) {
       <button className="login-button" type="submit">
         Sign in
       </button>
+      <h4> Reset your password</h4>
     </form>
   );
 }
