@@ -47,6 +47,7 @@ const Register = () => {
         type="password"
         name="password1"
         placeholder="password"
+        pattern='/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,20})/'
         id= 'password1'
             value={values.password1}
             onChange = {handleChange}

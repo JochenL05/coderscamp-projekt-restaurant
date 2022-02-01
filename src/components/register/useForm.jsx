@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import FormSuccess from "./FormSuccess";
 import validate from "./validate";
 
-const useForm = ({submitForm}) => {
+const useForm = ({SubmitForm}) => {
     const [values,setValues] = useState({
         username:'',
         email:'',
@@ -33,7 +33,7 @@ const useForm = ({submitForm}) => {
 
     useEffect(() =>{
         if(Object.keys(errors).length === 0 && dataIsCorrect){
-            FormSuccess(true)
+            SubmitForm(true)
         }
     },[errors])
 

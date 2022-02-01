@@ -7,17 +7,15 @@ import FormSuccess from './register/FormSuccess';
 const Form = () => {  
     const[formIsSubmit, setFormIsSubmit] = useState(false);
 
-    const submitForm = () => {
-      const setFormIsSubmit=(true);
+    const SubmitForm = () => {
+      setFormIsSubmit=(true);
     }
   return( 
-    <>
   <div>
       {!formIsSubmit ? 
-      (<Register submitForm={submitForm}/>) : (<FormSuccess/>)}
+      (<Register SubmitForm={SubmitForm}/>) : (<FormSuccess/>)}
       
   </div>
-  </>
     )
 };
 

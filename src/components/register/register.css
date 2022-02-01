@@ -1,6 +1,7 @@
 
 
 .mainRegister{
+    margin-top: 80px;
     height: calc(75vh - 40px);
     display: flex;
     flex-direction: column;
@@ -20,13 +21,18 @@
     margin-left: auto;
     font-weight: bold;
 }
+.data{
+    height: 45px;
+}
+.topIcon{
+    width: 40px;
+}
 .data > input{
     width: 200px;
-    height: 20px;
+    height: 10px;
     border-radius: 7px;
     font-size: 20px;
     padding: 10px;
-    
 }
 .inputs{
     padding: 10px;
@@ -51,6 +57,7 @@
 .error{
     font-size: 12px;
     font-family: serif;
+    margin-top: 0px;
 }
 .text-success{
     text-align: center;
