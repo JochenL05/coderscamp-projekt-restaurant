@@ -10,9 +10,9 @@ export default function Footer() {
                     <input 
                     type="text"
                     name="email"
-                    placecholder="email"
+                    placeholder="enter your email"
                     />
-                    <button type="submit">email<i class="fas fa-envelope-square"></i></button>
+                    <button type="submit"><i className="topIcon fas fa-envelope-square"></i></button>
                 </form> 
             </div>
         <div className="mainCenter">
