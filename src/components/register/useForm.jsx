@@ -1,44 +1,42 @@
 import { useEffect, useState } from "react";
-import FormSuccess from "./FormSuccess";
 import validate from "./validate";
 
-const useForm = ({SubmitForm}) => {
-    const [values,setValues] = useState({
-        username:'',
-        email:'',
-        password1:'',
-        password2:'',
+const useForm = () => {
+  const [values, setValues] = useState({
+    username: "",
+    email: "",
+    password1: "",
+    password2: "",
+  });
 
-        
+  const [errors, setErrors] = useState({});
+
+  const [dataIsCorrect, setDataIsCorrect] = useState(false);
+
+  const [formSubmited, setFormSubmited] = useState(false);
+
+  const handleChange = (event) => {
+    setValues({
+      ...values,
+      [event.target.name]: event.target.value,
     });
+  };
 
-    const [errors, setErrors] = useState({});
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    console.log("form submitted", values);
+    setErrors(validate(values));
+    setFormSubmited(true);
+  };
 
-    const [dataIsCorrect,setDataIsCorrect]=useState(false)
+  useEffect(() => {
+    if (!formSubmited) return;
+    if (Object.keys(errors).length === 0) {
+      setDataIsCorrect(true);
+    }
+  }, [errors]);
 
-
-    const handleChange = (event) => {
-        setValues({
-            ...values,
-            [event.target.name]: event.target.value,
-        })
-    };
-
-    const handleSubmit = async (event) =>{
-        event.preventDefault();
-        console.log('form submitted', values )
-        setErrors(validate(values));
-        setDataIsCorrect(true);
-    };
-
-    useEffect(() =>{
-        if(Object.keys(errors).length === 0 && dataIsCorrect){
-            SubmitForm(true)
-        }
-    },[errors])
-
-        return{handleChange, values, handleSubmit, errors}
+  return { handleChange, values, handleSubmit, errors, dataIsCorrect };
 };
 
-
-export default useForm ;
+export default useForm;
