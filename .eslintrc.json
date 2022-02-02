@@ -16,13 +16,18 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
         "prettier/prettier": [
             "error",
             {
-                "endOfLine": "auto"
+                "endOfLine": "auto",
+                "trailingComma": "es5",
+                "tabWidth": 2,
+                "semi": true,
+                "singleQuote": false
             }
         ]
     }
