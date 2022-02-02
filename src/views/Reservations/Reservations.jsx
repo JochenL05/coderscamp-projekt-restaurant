@@ -41,7 +41,7 @@ const Reservations = () => {
               placeholder="Phone"
               {...register("phone", { required: true })}
             />
-            {errors.name && <p>This field is required</p>}
+            {errors.phone && <p>This field is required</p>}
           </div>
           <div className="form-inputs">
             <label className="form-label">* Email</label>
@@ -55,7 +55,7 @@ const Reservations = () => {
                 pattern: /^[^@ ]+@[^@ ]+\.[^@ .]{2,}$/,
               })}
             />
-            {errors.name && <p>This field is required</p>}
+            {errors.email && <p>This field is required</p>}
           </div>
           <div className="form-inputs">
             <label className="form-label">* Date</label>
@@ -66,18 +66,20 @@ const Reservations = () => {
               placeholder="Date"
               {...register("date", { required: true })}
             />
-            {errors.name && <p>This field is required</p>}
+            {errors.date && <p>This field is required</p>}
           </div>
           <div className="form-inputs">
             <label className="form-label">* Time</label>
             <input
               type="time"
+              min="12:00"
+              max="20:00"
               name="time"
               className="form-input"
               placeholder="Time"
               {...register("time", { required: true })}
             />
-            {errors.name && <p>This field is required</p>}
+            {errors.time && <p>Opening hours 11:00 - 20:00</p>}
           </div>
           <div className="form-inputs">
             <label className="form-label">
@@ -88,7 +90,7 @@ const Reservations = () => {
                 <option>For 5 people</option>
                 <option>For 4 people</option>
               </select>
-              {errors.name && <p>This field is required</p>}
+              {errors.table && <p>This field is required</p>}
             </label>
           </div>
           <div className="form-inputs">

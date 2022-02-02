@@ -1,11 +1,11 @@
-import "./App.css";
-import Homepage from "./views/Homepage/Homepage";
+//import Homepage from "./views/Homepage/Homepage";
 import React from "react";
+import Reservations from "./views/Reservations/Reservations";
 
 function App() {
   return (
     <div className="App">
-      <Homepage />
+      <Reservations />
     </div>
   );
 }
