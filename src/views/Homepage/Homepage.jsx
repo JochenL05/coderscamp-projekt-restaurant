@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import Footer from "../../components/Footer/Footer";
 import Topbar from "../../components/Topbar/Topbar";
 
@@ -11,4 +11,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage
+export default Homepage;
