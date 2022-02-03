@@ -1,8 +1,7 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
 import Topbar from "../../components/Topbar/Topbar";
-import Changepersonaldata from "../../components/Changepersonaldata/Changepersonaldata";
-import Oldorders from "../../components/Oldorders/Oldorders";
+import Changepersonaldata from "../../components/ChangePersonalData/ChangePersonalData";
 
 const Usersettings = () => {
   return (
@@ -10,7 +9,6 @@ const Usersettings = () => {
       <Topbar />
       <h1>User settings</h1>
       <Changepersonaldata />
-      <Oldorders />
       <Footer />
     </div>
   );
