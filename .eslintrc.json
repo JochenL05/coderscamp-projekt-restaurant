@@ -23,11 +23,7 @@
         "prettier/prettier": [
             "error",
             {
-                "endOfLine": "auto",
-                "trailingComma": "es5",
-                "tabWidth": 2,
-                "semi": true,
-                "singleQuote": false
+                "endOfLine": "auto"
             }
         ]
     }

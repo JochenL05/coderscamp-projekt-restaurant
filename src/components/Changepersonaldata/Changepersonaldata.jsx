@@ -84,72 +84,119 @@ export default function Form() {
 
   return (
     <>
-      <div>
-        {errorMessage()}
-        {successMessage()}
-      </div>
-
       <body>
         <div className="l-form">
           <form action="" className="form">
             <h1 className="form__title">Change personal data</h1>
 
             <div className="form__div">
-              <input onChange={handleName} className="form__input" placeholder=" " value={name} />
+              <input
+                onChange={handleName}
+                className="form__input"
+                placeholder=" "
+                value={name}
+              />
               <label htmlFor="" className="form__label">
                 Name
               </label>
             </div>
 
             <div className="form__div">
-              <input onChange={handleSurname} className="form__input" placeholder=" " value={surname} />
+              <input
+                onChange={handleSurname}
+                className="form__input"
+                placeholder=" "
+                value={surname}
+              />
               <label htmlFor="" className="form__label">
                 Surname
               </label>
             </div>
 
             <div className="form__div">
-              <input onChange={handlePhone} type="text" className="form__input" placeholder=" " value={phone} />
+              <input
+                onChange={handlePhone}
+                type="text"
+                className="form__input"
+                placeholder=" "
+                value={phone}
+              />
               <label htmlFor="" className="form__label">
                 Phone number
               </label>
             </div>
 
             <div className="form__div">
-              <input onChange={handleEmail} className="form__input" placeholder=" " value={email} />
+              <input
+                onChange={handleEmail}
+                className="form__input"
+                placeholder=" "
+                value={email}
+              />
               <label htmlFor="" className="form__label">
                 E-mail
               </label>
             </div>
 
             <div className="form__div">
-              <input onChange={handleCity} className="form__input" placeholder=" " value={city} />
+              <input
+                onChange={handleCity}
+                className="form__input"
+                placeholder=" "
+                value={city}
+              />
               <label htmlFor="" className="form__label">
                 City
               </label>
             </div>
 
             <div className="form__div">
-              <input onChange={handleStreet} className="form__input" placeholder=" " value={street} />
+              <input
+                onChange={handleStreet}
+                className="form__input"
+                placeholder=" "
+                value={street}
+              />
               <label htmlFor="" className="form__label">
                 Street
               </label>
             </div>
 
             <div className="form__div">
-              <input onChange={handleHouse} className="form__input" placeholder=" " value={house} />
+              <input
+                onChange={handleHouse}
+                className="form__input"
+                placeholder=" "
+                value={house}
+              />
               <label htmlFor="" className="form__label">
                 House number
               </label>
             </div>
 
             <div className="form__div">
-              <input onChange={handlePostcode} className="form__input" placeholder=" " value={postcode} />
+              <input
+                onChange={handlePostcode}
+                className="form__input"
+                placeholder=" "
+                value={postcode}
+              />
               <label htmlFor="" className="form__label">
                 Post code
               </label>
             </div>
-            <input onClick={handleSubmit} type="submit" className="form__button" value="Confirm" />
+
+            <div>
+              {errorMessage()}
+              {successMessage()}
+            </div>
+
+            <input
+              onClick={handleSubmit}
+              type="submit"
+              className="form__button"
+              value="Confirm"
+            />
           </form>
         </div>
       </body>
