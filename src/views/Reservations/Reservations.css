@@ -23,6 +23,13 @@ body {
   position: relative;
 }
 
+.form-success {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 80px;
+  color: var(--text-color-black);
+}
+
 .form {
   display: flex;
   flex-direction: column;

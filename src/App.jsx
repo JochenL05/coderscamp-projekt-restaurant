@@ -1,11 +1,11 @@
 //import Homepage from "./views/Homepage/Homepage";
 import React from "react";
-import Reservations from "./views/Reservations/Reservations";
+import Form from "./views/Reservations/Form";
 
 function App() {
   return (
     <div className="App">
-      <Reservations />
+      <Form />
     </div>
   );
 }

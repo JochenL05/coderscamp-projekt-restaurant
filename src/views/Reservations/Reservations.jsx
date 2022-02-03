@@ -1,8 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import "./Reservations.css";
-import Topbar from "../../components/Topbar/Topbar";
-import Footer from "../../components/Footer/Footer";
 
 const Reservations = () => {
   const {
@@ -17,7 +15,6 @@ const Reservations = () => {
 
   return (
     <div>
-      <Topbar />
       <div className="form-content-right">
         <form onSubmit={handleSubmit(onSubmit)} className="form">
           <h1>Make a reservation</h1>
@@ -107,7 +104,6 @@ const Reservations = () => {
           </button>
         </form>
       </div>
-      <Footer />
     </div>
   );
 };
