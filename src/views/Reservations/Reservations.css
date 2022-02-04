@@ -1,10 +1,13 @@
 :root {
-  --background-color-placeholder: #F9F9F9;
   --background-color: white;
+
   --text-color-black: #0A0A0B;
   --text-color-grey: #B9B7BD;
+
   --button-color: #FB7C5C;
-  --font-size: 1.5rem;
+  --font-size-header: 1.5rem;
+
+  --background-color-placeholder: #F9F9F9;
 }
 
 * {
@@ -38,7 +41,7 @@ body {
 }
 
 .form h1 {
-  font-size: var(--font-size);
+  font-size: var(--font-size-header);
   text-align: center;
   width: 80%;
   margin-bottom: 1rem;
