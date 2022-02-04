@@ -1,5 +1,6 @@
 import React from "react";
 
+// eslint-disable-next-line react/prop-types
 export const Item = ({ name, desc, price, img }) => {
   return (
     <div className="col-sm-6 col-md-5 col-lg-4 item px-5 mt-2">
@@ -11,7 +12,7 @@ export const Item = ({ name, desc, price, img }) => {
           <button type="button" className="btn btn-success">
             Add to basket
           </button>
-          <span className="badge rounded-pill bg-danger price">${price}</span>
+          <span className="badge rounded-pill bg-danger price">{price}</span>
         </div>
       </div>
     </div>
