@@ -1,5 +1,5 @@
-import ContactInfo from "../../components/ContacComponents/ContactInfo/ContactInfo";
-import GoogleMap from "../../components/ContacComponents/GoogleMap/GoogleMap";
+import ContactInfo from "./src/components/contacComponents/contactInfo/ContactInfo";
+import GoogleMap from "../../components/contacComponents/googleMap/GoogleMap";
 import Topbar from "../../components/Topbar/Topbar";
 import React from "react";
 import Header from "../../components/Header/Header";
