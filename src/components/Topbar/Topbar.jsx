@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* eslint-disable prettier/prettier */
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
@@ -50,4 +51,12 @@ function Topbar() {
     </>
   );
 }
+=======
+import React from "react";
+
+const Topbar = () => {
+  return <div className="topbar">Topbar</div>;
+};
+
+>>>>>>> origin/dev
 export default Topbar;
