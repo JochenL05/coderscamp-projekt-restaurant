@@ -1,0 +1,30 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+  gap: 5rem;
+}
+
+.contact_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_info-header {
+  margin-bottom: 3rem;
+}
+
+.contact_info-piece {
+  display: flex;
+}
+.contact_info-piece > * {
+  display: flex;
+  margin: 1em;
+}
+
+@media screen and (max-width: 960px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+}
