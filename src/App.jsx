@@ -1,14 +1,22 @@
 import React from "react";
-//import logo from "./logo.svg";
 import "./App.css";
-//import Homepage from "./views/Homepage/Homepage";
+//import Usersettings from "./views/Usersettings/Usersettings";
 import Oldorder from "./views/Oldorder/Oldorder";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Oldorders from "./components/Oldorders/Oldorders";
+import Orderlist from "./components/Orderlist/Orderlist";
 
 function App() {
   return (
-    <div className="App">
-      <Oldorder />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Oldorder />} />
+          <Route path="orders" element={<Oldorders />} />
+          <Route path="orders/:orderID" element={<Orderlist />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

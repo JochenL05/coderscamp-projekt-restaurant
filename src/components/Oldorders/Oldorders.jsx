@@ -1,8 +1,8 @@
 import React from "react";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import OrderArr from "../../components/Orderlist/OrderArr";
+import "./Oldorders.css";
 
-let order_date = "01.01.2020";
-let order_price = "1$";
 const Oldorders = () => {
   return (
     <>
@@ -10,9 +10,20 @@ const Oldorders = () => {
         <h1>Old orders</h1>
       </div>
 
-      <div>
-        {/*   <Link to="./Oldorder"> */}
-        Order from {order_date} for {order_price}.{/*    </Link> */}
+      <div className="listDesign">
+        {OrderArr.map((order) => {
+          return (
+            <>
+              <div className="listDesign__text">
+                <Link to={`/orders/${order.orderID}`} key={order.orderID}>
+                  <p>
+                    Order from {order.orderDate} for {order.orderPrice}.
+                  </p>
+                </Link>
+              </div>
+            </>
+          );
+        })}
       </div>
     </>
   );

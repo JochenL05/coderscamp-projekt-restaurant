@@ -1,25 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
 import "./Orderlist.css";
-
-let date = "01.01.2020";
-let order = "Pizza";
-let price = "10$";
-let ingredivents = "cheese";
-let address = "Greenstreet 1";
+import OrderArr from "./OrderArr";
 
 const Orderlist = () => {
+  let { orderID } = useParams();
+  let order = OrderArr.filter((ord) => {
+    return ord.orderID === orderID;
+  });
+  console.log(order[0]);
+  useEffect(() => {
+    console.log(orderID);
+  }, []);
+
   return (
-    <div className="grid">
-      <div className="child">Date</div>
-      <div className="child">Order</div>
-      <div className="child">Price</div>
-      <div className="child">Ingredivents</div>
-      <div className="child">Address</div>
-      <div className="child">{date}</div>
-      <div className="child">{order}</div>
-      <div className="child">{price}</div>
-      <div className="child">{ingredivents}</div>
-      <div className="child">{address}</div>
+    <div className="orderList">
+      <div className="orderList_header">Date</div>
+      <div className="orderList_header">Delivery Address</div>
+      <div className="orderList_header">Dishes Ordered</div>
+      <div className="orderList_header">Price</div>
+      <div className="orderList_data">{order[0].orderDate}</div>
+      <div className="orderList_data">{order[0].deliveryAddress}</div>
+      <div className="orderList_data">
+        {order[0].orderedDishes.map((dish, index) => {
+          return (
+            <p key={index}>
+              {dish.dishName} - {dish.dishPrice}
+            </p>
+          );
+        })}
+      </div>
+      <div className="orderList_data">{order[0].orderPrice}</div>
     </div>
   );
 };
