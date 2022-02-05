@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "./Orderlist.css";
-import OrderArr from "./OrderArr";
+import "./OldOrderDetails.css";
+import OrderArr from "../../data/OrderArr";
 
-const Orderlist = () => {
+const OldOrderDetails = () => {
   let { orderID } = useParams();
   let order = OrderArr.filter((ord) => {
     return ord.orderID === orderID;
@@ -35,4 +35,4 @@ const Orderlist = () => {
   );
 };
 
-export default Orderlist;
+export default OldOrderDetails;

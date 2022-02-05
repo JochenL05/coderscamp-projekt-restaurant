@@ -1,15 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import OrderArr from "../../components/Orderlist/OrderArr";
-import "./Oldorders.css";
+import OrderArr from "../../data/OrderArr";
+import "./OldOrdersList.css";
 
-const Oldorders = () => {
+const OldOrdersList = () => {
   return (
     <>
-      <div>
-        <h1>Old orders</h1>
-      </div>
-
       <div className="listDesign">
         {OrderArr.map((order) => {
           return (
@@ -29,4 +25,4 @@ const Oldorders = () => {
   );
 };
 
-export default Oldorders;
+export default OldOrdersList;
