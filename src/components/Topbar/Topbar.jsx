@@ -62,7 +62,7 @@ function Topbar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/contact-page"
+                to="/contact"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
