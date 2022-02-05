@@ -16,27 +16,57 @@ function Topbar() {
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <NavLink exact to="/" activeClassName="active" className="nav-links" onClick={handleClick}>
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
                 Strona Główna
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink exact to="/menu" activeClassName="active" className="nav-links" onClick={handleClick}>
+              <NavLink
+                exact
+                to="/menu"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
                 Menu
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink exact to="/about" activeClassName="active" className="nav-links" onClick={handleClick}>
+              <NavLink
+                exact
+                to="/about"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
                 O nas
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink exact to="/reservation" activeClassName="active" className="nav-links" onClick={handleClick}>
+              <NavLink
+                exact
+                to="/reservations"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
                 Rezerwacje
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink exact to="/contact-page" activeClassName="active" className="nav-links" onClick={handleClick}>
+              <NavLink
+                exact
+                to="/contact-page"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
                 Kontakt
               </NavLink>
             </li>
