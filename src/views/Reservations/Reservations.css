@@ -90,7 +90,6 @@ select {
   width: 40%;
   height: 50px;
   margin-top: 10px;
-  margin-bottom: 10px;
   border-radius: 2px;
   background: var(--button-color);
   outline: none;

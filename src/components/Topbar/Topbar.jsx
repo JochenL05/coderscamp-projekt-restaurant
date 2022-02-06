@@ -37,7 +37,7 @@ function Topbar() {
                 Menu
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink
                 exact
                 to="/about"
@@ -47,7 +47,7 @@ function Topbar() {
               >
                 O nas
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
               <NavLink
                 exact
@@ -68,6 +68,28 @@ function Topbar() {
                 onClick={handleClick}
               >
                 Kontakt
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/checkout"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                <i className="fas fa-shopping-basket"></i>
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/logout"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Wyloguj
               </NavLink>
             </li>
           </ul>
