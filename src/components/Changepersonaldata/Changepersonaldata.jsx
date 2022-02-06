@@ -1,6 +1,6 @@
 import React from "react";
 import "./changePersonalData.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Form() {
   const [name, setName] = useState("");
@@ -15,6 +15,16 @@ export default function Form() {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
 
+  useEffect(() => {
+    localStorage.setItem("name", JSON.stringify(name));
+  }, [name]);
+
+  useEffect(() => {
+    const storedName = JSON.parse(localStorage.getItem("name"));
+    if (storedName) setName(storedName);
+  }, []);
+
+  //const [valueToSubmit, setValueToSubmit] = useState(()
   const handleName = (e) => {
     setName(e.target.value);
     setSubmitted(false);
@@ -67,11 +77,12 @@ export default function Form() {
       house === "" ||
       postcode === ""
     ) {
-      setError(true);
-    } else {
       setSubmitted(true);
       setError(false);
+    } else {
+      setError(true);
     }
+    setName(() => "");
   };
 
   const successMessage = () => {
