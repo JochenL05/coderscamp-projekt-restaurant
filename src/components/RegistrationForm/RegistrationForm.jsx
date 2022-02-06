@@ -1,13 +1,14 @@
 import "./register.css";
 import useForm from "./useForm";
-import React from "react";
+import React, { useEffect } from "react";
 
-const Register = (/* {submitForm} */) => {
-  const { handleChange, values, handleSubmit, errors /* , {submitForm} */ } =
+/* eslint-disable react/prop-types */
+const RegistrationForm = ({ submitForm }) => {
+  const { handleChange, values, handleSubmit, errors, dataIsCorrect } =
     useForm();
-  // useEffect(() => {
-  //   dataIsCorrect && submitForm(true);
-  // }, [dataIsCorrect]);
+  useEffect(() => {
+    dataIsCorrect && submitForm(true);
+  }, [dataIsCorrect]);
   return (
     <div className="mainRegister">
       <div className="form">
@@ -78,4 +79,4 @@ const Register = (/* {submitForm} */) => {
   );
 };
 
-export default Register;
+export default RegistrationForm;
