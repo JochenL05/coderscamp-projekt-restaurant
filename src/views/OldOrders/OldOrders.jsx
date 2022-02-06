@@ -1,17 +1,17 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
 import Topbar from "../../components/Topbar/Topbar";
-import ChangePersonalData from "../../components/Changepersonaldata/Changepersonaldata";
+import OldOrdersList from "../../components/OldOrdersList/OldOrdersList";
 
-const UserSettings = () => {
+const OldOrders = () => {
   return (
     <div>
       <Topbar />
-      <h1>User settings</h1>
-      <ChangePersonalData />
+      <h1>Previous orders</h1>
+      <OldOrdersList />
       <Footer />
     </div>
   );
 };
 
-export default UserSettings;
+export default OldOrders;
