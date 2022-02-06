@@ -5,7 +5,7 @@ import "./App.css";
 import Homepage from "./views/Homepage/Homepage";
 import ContactPage from "./views/ContactPage/ContactPage";
 import LoginPage from "./views/LoginPage/LoginPage";
-import Reservations from "./views/Reservations/Reservations";
+import Reservations from "./views/Reservations/Reservations.jsx";
 import OldOrders from "./views/OldOrders/OldOrders";
 import OldOrderDetails from "./components/OldOrderDetails/OldOrderDetails";
 import Register from "./views/Register/register";

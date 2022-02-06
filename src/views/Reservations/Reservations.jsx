@@ -1,20 +1,27 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import "./Reservations.css";
+import Topbar from "../../components/Topbar/Topbar";
 
 const Reservations = () => {
+  //const [name, setName] = useState("");
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
+  // useEffect(() => {
+  //   localStorage.setItem("name", JSON.stringify(name));
+  // }, [name]);
+
+  const onSubmit = (reservations) => {
+    localStorage.setItem("reservations", JSON.stringify(reservations));
   };
 
   return (
     <div>
+      <Topbar />
       <div className="form-content-right">
         <form onSubmit={handleSubmit(onSubmit)} className="form">
           <h1>Make a reservation</h1>
@@ -22,7 +29,8 @@ const Reservations = () => {
             <label className="form-label">* Name</label>
             <input
               type="text"
-              name="name"
+              //value={name}
+              //onChange={(e) => setName(e.target.value)}
               className="form-input"
               placeholder="Name"
               {...register("name", { required: true })}
