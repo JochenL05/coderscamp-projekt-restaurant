@@ -1,17 +1,18 @@
-//import ContactForm from "../../components/contacComponents/contactForm/ContactForm";
-import ContactInfo from "../../components/contacComponents/contactInfo/ContactInfo";
-import ContactSection from "../../components/contacComponents/contactSection/ContactSection";
-import MapContainer from "../../components/contacComponents/googleMap/GoogleMap";
+import GoogleMap from "../../components/contacComponents/googleMap/GoogleMap";
 import Topbar from "../../components/Topbar/Topbar";
+import ContactInfo from "../../components/contacComponents/contactInfo/ContactInfo";
+import Header from "../../components/Header/Header";
+import React from "react";
+import Footer from "../../components/Footer/Footer";
 import "./contactPage.css";
-
 export default function ContactPage() {
   return (
-    <div>
+    <div className="body">
       <Topbar />
-      <ContactSection />
+      <Header title="CONTACT" />
       <ContactInfo />
-      <MapContainer />
+      <GoogleMap />
+      <Footer />
     </div>
   );
 }

@@ -1,20 +1,22 @@
-.contactTitle{
-    font-size: 22px;
+.formGroup{
+    background-color: var(--background-color) ;
 }
 .formGroup{
     width: 100%;
 }
 
-
-label {
-    font-size: 1.8em;
+.contactForm {
+    font-size: 1em;
+}
+.contact_info-header{
+      margin-bottom: 3rem;
 }
 
 input,
 textarea {
-    width: 100%;
-    font-size: 2rem;
-    padding: 1.2rem;
+    width: 70%;
+    font-size: 1rem;
+    padding: 10px;
     background-color:lightgray;
     outline: none;
     border: none;
@@ -30,18 +32,34 @@ textarea :hover{
     color:coral;
 }
 
-button{
-background-color: black;
-color: white;
-font-size: 2rem;
-display: inline-block;
-outline: none;
-border: none;
-padding: 1rem 4rem;
-border-radius: 8px;
-cursor: pointer;
+.buttonContact{
+width: 40%;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  background: var(--button-color);
+  outline: none;
+  border: none;
+  color: var(--text-color-black);
+  font-size: 1rem;
 }
 
-button:hover{ 
+.buttonContact:hover{ 
   background-color: coral;
+}
+
+@media screen and (max-width: 960px) {
+    input,
+textarea {
+    width: 50%;
+    font-size: 1rem;
+    padding: 15px;
+}
+button{
+    padding: 7px 15px;
+    font-size: 1rem;
+
+}
+
 }
