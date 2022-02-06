@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 //import Homepage from "./views/Homepage/Homepage";
-import Menu from "./components/Menu/Menu";
+import Menu from "./views/Menu/Menu";
 
 function App() {
   return (
