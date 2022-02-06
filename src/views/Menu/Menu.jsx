@@ -24,24 +24,6 @@ const Menu = () => {
       price: 25,
       //   image:
     },
-    {
-      id: Math.random(),
-      name: "Capriciosa",
-      price: 25,
-      //   image:
-    },
-    {
-      id: Math.random(),
-      name: "Capriciosa",
-      price: 25,
-      //   image:
-    },
-    {
-      id: Math.random(),
-      name: "Capriciosa",
-      price: 25,
-      //   image:
-    },
   ];
 
   const [itemsToDisplay, setItemsToDisplay] = useState([]);
