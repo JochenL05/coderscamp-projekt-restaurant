@@ -1,13 +1,13 @@
 import "./register.css";
 import useForm from "./useForm";
-import React, { useEffect } from "react";
+import React from "react";
 
-const Register = ({ submitForm }) => {
-  const { handleChange, values, handleSubmit, errors, dataIsCorrect } =
+const Register = (/* {submitForm} */) => {
+  const { handleChange, values, handleSubmit, errors /* , {submitForm} */ } =
     useForm();
-  useEffect(() => {
-    dataIsCorrect && submitForm(true);
-  }, [dataIsCorrect]);
+  // useEffect(() => {
+  //   dataIsCorrect && submitForm(true);
+  // }, [dataIsCorrect]);
   return (
     <div className="mainRegister">
       <div className="form">

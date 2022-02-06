@@ -1,14 +1,17 @@
 import React from "react";
 import Footer from "../../components/Footer/Footer";
 import Topbar from "../../components/Topbar/Topbar";
-import RegistrationForm from "../../components/RegistrationForm/RegistrationForm";
+import OldOrdersList from "../../components/OldOrdersList/OldOrdersList";
 
-export default function register() {
+const OldOrders = () => {
   return (
     <div>
       <Topbar />
-      <RegistrationForm />
+      <h1>Previous orders</h1>
+      <OldOrdersList />
       <Footer />
     </div>
   );
-}
+};
+
+export default OldOrders;

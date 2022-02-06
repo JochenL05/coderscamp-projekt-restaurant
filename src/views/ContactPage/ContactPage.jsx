@@ -1,8 +1,8 @@
-import ContactInfo from "../../components/ContacComponents/ContactInfo/ContactInfo";
-import GoogleMap from "../../components/ContacComponents/GoogleMap/GoogleMap";
+import ContactInfo from "../../components/contacComponents/contactInfo/ContactInfo";
+import GoogleMap from "../../components/contacComponents/googleMap/GoogleMap";
 import Topbar from "../../components/Topbar/Topbar";
-import React from "react";
 import Header from "../../components/Header/Header";
+import React from "react";
 
 export default function ContactPage() {
   return (
