@@ -5,19 +5,17 @@ import "./MenuCard.css";
 
 const MenuCard = ({ dish }) => {
   return (
-    <div className="container">
-      <div className="menu_menucard">
-        <div className="menu_items">
-          <div className="menu-card-image">{dish.image}</div>
-          <div className="details">
-            <div className="menucard-name">{dish.name}</div>
-            <div className="menucard_price">{dish.price}</div>
-          </div>
-          <div className="menucard-description"></div>
-          <button type="submit" className="menucard-orderbutton">
-            Add to basket
-          </button>
+    <div className="menu_menucard">
+      <div className="menu_items">
+        <div className="menu-card-image">{dish.image}</div>
+        <div className="details">
+          <div className="menucard-name">{dish.name}</div>
+          <div className="menucard_price">{dish.price}</div>
         </div>
+        <div className="menucard-description"></div>
+        <button type="submit" className="menucard-orderbutton">
+          Add to basket
+        </button>
       </div>
     </div>
   );
