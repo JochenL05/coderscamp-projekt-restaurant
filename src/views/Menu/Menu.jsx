@@ -10,6 +10,7 @@ const Menu = () => {
       id: Math.random(),
       name: "Margherita",
       price: 21,
+      description: "",
       //image:
     },
     {
