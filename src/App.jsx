@@ -8,6 +8,7 @@ import LoginPage from "./views/LoginPage/LoginPage";
 import Reservations from "./views/Reservations/Reservations";
 import OldOrders from "./views/OldOrders/OldOrders";
 import OldOrderDetails from "./components/OldOrderDetails/OldOrderDetails";
+import Register from "./views/Register/register";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="reservations" element={<Reservations />} />
           <Route path="orders" element={<OldOrders />} />
           <Route path="orders/:orderID" element={<OldOrderDetails />} />
+          <Route path="register" element={<Register />} />
         </Routes>
       </div>
     </BrowserRouter>
