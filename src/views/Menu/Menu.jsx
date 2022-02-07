@@ -2,23 +2,9 @@ import React, { useEffect, useState } from "react";
 import Topbar from "../../components/Topbar/Topbar";
 import Footer from "../../components/Footer/Footer";
 import MenuCard from "../../components/MenuCard/MenuCard";
+import dishes from "../../data/MenuArr";
 
 const Menu = () => {
-  const dishes = [
-    {
-      id: Math.random(),
-      name: "Margherita",
-      price: 21,
-      //   image:
-    },
-    {
-      id: Math.random(),
-      name: "Capriciosa",
-      price: 25,
-      //   image:
-    },
-  ];
-
   const [itemsToDisplay, setItemsToDisplay] = useState([]);
 
   const fetchData = async () => {
@@ -44,10 +30,14 @@ const Menu = () => {
         <div className="menu">
           {itemsToDisplay.length > 0 ? (
             itemsToDisplay.map((dish, index) => {
-              return <MenuCard key={dish.id + index} dish={dish} />;
+              return (
+                <>
+                  <MenuCard key={dish.id + index} dish={dish} />
+                </>
+              );
             })
           ) : (
-            <div></div>
+            <div>Cart is empty</div>
           )}
         </div>
       </div>

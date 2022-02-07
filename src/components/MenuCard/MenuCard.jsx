@@ -2,12 +2,11 @@ import React, { useContext } from "react";
 import { CartContext } from "../../context/Context";
 
 /* eslint-disable react/prop-types */
-
 const MenuCard = ({ dish }) => {
   const { addToCart } = useContext(CartContext);
 
   const handleClick = () => {
-    addToCart(dish.id);
+    addToCart({ name: dish.name, price: dish.price });
   };
 
   return (
