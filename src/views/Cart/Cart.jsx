@@ -5,6 +5,7 @@ import { CartContext } from "../../context/Context";
 
 const Cart = () => {
   const { getCurrentItems } = useContext(CartContext);
+  const { addToCart } = useContext(CartContext);
   const [items, setItems] = useState([]);
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(0);
@@ -30,13 +31,17 @@ const Cart = () => {
     setCount((prevCount) => prevCount - 1);
   }
 
-  function incrementCount() {
-    setCount((prevCount) => prevCount + 1);
-  }
+  // function incrementCount() {
+  //   setCount((prevCount) => prevCount + 1);
+  // }
 
   const handleClick = () => {
     const x = getCurrentItems();
     setItems(x);
+  };
+
+  const clearCart = () => {
+    localStorage.removeItem("menuItems");
   };
 
   return (
@@ -50,7 +55,7 @@ const Cart = () => {
               <>
                 <div key={el.id}>{el.name}</div>
                 <button onClick={decrementCount}> - </button>
-                <button onClick={incrementCount}> + </button>
+                <button onClick={() => addToCart(el)}> + </button>
                 <span> {count} </span>
               </>
             );
@@ -60,6 +65,8 @@ const Cart = () => {
       ) : (
         <div> Cart is empty</div>
       )}
+      <button onClick={clearCart}>Clear Cart</button>
+      <button disabled={items.length === 0}> Checkout </button>
       <Footer />
     </>
   );

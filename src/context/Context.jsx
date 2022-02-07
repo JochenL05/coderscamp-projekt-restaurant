@@ -8,7 +8,22 @@ const Context = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (item) => {
-    setCartItems((currentItems) => [...currentItems, item]);
+    // setCartItems((currentItems) => {
+    //   let items = [];
+    //   currentItems.((el) => {
+    //     if (el.id === item.id) {
+    //       el.qty++;
+    //     }
+    //     items.push(el);
+    //   });
+    //   return items;
+    // });
+    console.log(item);
+    setCartItems([
+      ...cartItems,
+      cartItems.filter((el) => (el.id === item.id ? (el.qty += 1) : el.qty)),
+    ]);
+    console.log(cartItems);
   };
 
   const getCurrentItems = () => {

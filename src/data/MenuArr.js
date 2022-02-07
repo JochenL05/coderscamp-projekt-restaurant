@@ -1,23 +1,27 @@
 const dishes = [
   {
-    id: "001",
+    id: 1001,
     name: "Margherita ",
     price: 20,
+    qty: 1,
   },
   {
-    id: "002",
+    id: 1002,
     name: "Capriciosa ",
     price: 25,
+    qty: 1,
   },
   {
-    id: "003",
+    id: 1003,
     name: "Pepperoni ",
     price: 23,
+    qty: 1,
   },
   {
-    id: "004",
+    id: 1004,
     name: "Carbonara ",
     price: 27,
+    qty: 1,
   },
 ];
 

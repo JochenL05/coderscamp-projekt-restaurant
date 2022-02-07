@@ -6,7 +6,7 @@ const MenuCard = ({ dish }) => {
   const { addToCart } = useContext(CartContext);
 
   const handleClick = () => {
-    addToCart({ name: dish.name, price: dish.price });
+    addToCart(dish);
   };
 
   return (
