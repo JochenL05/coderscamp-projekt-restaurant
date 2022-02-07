@@ -14,10 +14,10 @@ const MenuCard = ({ dish }) => {
             <div className="menucard_price">{dish.price}</div>
           </div>
           <div className="menucard-description">{dish.description}</div>
+          <button type="submit" className="menucard-orderbutton">
+            Add to basket
+          </button>
         </div>
-        <button type="submit" className="menucard-orderbutton">
-          Add to basket
-        </button>
       </div>
     </div>
   );
