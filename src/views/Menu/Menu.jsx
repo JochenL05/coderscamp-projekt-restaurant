@@ -7,39 +7,39 @@ import "./Menu.css";
 const Menu = () => {
   const dishes = [
     {
-      id: Math.random(),
+      id: 1,
       name: "Margherita",
       price: 21,
       description: "",
       //image:,
     },
     {
-      id: Math.random(),
+      id: 2,
       name: "Capriciosa",
       price: 25,
       //   image:
     },
     {
-      id: Math.random(),
-      name: "Capriciosa",
+      id: 3,
+      name: "Salame",
       price: 25,
       //   image:
     },
     {
-      id: Math.random(),
-      name: "Capriciosa",
+      id: 4,
+      name: "Vegetables",
       price: 25,
       //   image:
     },
     {
-      id: Math.random(),
-      name: "Capriciosa",
+      id: 5,
+      name: "Four cheeses",
       price: 25,
       //   image:
     },
     {
-      id: Math.random(),
-      name: "Capriciosa",
+      id: 6,
+      name: "Rucola",
       price: 25,
       //   image:
     },
