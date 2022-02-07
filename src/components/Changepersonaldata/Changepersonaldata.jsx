@@ -1,5 +1,5 @@
 import React from "react";
-import "./changePersonalData.css";
+import "./Changepersonaldata.css";
 import { useState, useEffect } from "react";
 
 export default function Form() {
@@ -14,10 +14,6 @@ export default function Form() {
 
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
-
-  useEffect(() => {
-    localStorage.setItem("name", JSON.stringify(name));
-  }, [name]);
 
   useEffect(() => {
     const storedName = JSON.parse(localStorage.getItem("name"));
@@ -83,6 +79,10 @@ export default function Form() {
       setError(true);
     }
     setName(() => "");
+
+    useEffect(() => {
+      localStorage.setItem("name", JSON.stringify(name));
+    }, [name]);
   };
 
   const successMessage = () => {

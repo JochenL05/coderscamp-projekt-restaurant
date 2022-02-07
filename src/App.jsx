@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import UserSettings from "./views/UserSettings/UserSettings";
+import Usersettings from "./views/Usersettings/Usersettings";
 
 function App() {
   return (
     <div className="App">
-      <UserSettings />
+      <Usersettings />
     </div>
   );
 }
