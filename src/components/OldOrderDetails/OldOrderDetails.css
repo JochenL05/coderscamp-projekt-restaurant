@@ -1,0 +1,14 @@
+.orderList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid black;
+  /*grid-template-rows: 80px auto 80px;*/
+}
+
+.orderList_header {
+  border-bottom: 1px solid black;
+}
+
+.orderList > * {
+  border-right: 1px solid black;
+}

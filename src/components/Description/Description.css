@@ -1,0 +1,22 @@
+:root {
+  --background-color: white;
+}
+
+.all {
+  padding: 100px 20px;
+}
+
+.primary {
+  color: black;
+  font-size: 50px;
+  background: var(--background-color);
+  width: 100%;
+}
+
+.secondary {
+  color: gray;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 35px;
+  background: var(--background-color);
+  width: 100%;
+}

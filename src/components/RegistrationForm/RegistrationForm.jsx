@@ -2,7 +2,8 @@ import "./register.css";
 import useForm from "./useForm";
 import React, { useEffect } from "react";
 
-const Register = ({ submitForm }) => {
+/* eslint-disable react/prop-types */
+const RegistrationForm = ({ submitForm }) => {
   const { handleChange, values, handleSubmit, errors, dataIsCorrect } =
     useForm();
   useEffect(() => {
@@ -78,4 +79,4 @@ const Register = ({ submitForm }) => {
   );
 };
 
-export default Register;
+export default RegistrationForm;

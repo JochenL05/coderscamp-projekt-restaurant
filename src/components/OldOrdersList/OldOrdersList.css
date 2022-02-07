@@ -1,0 +1,10 @@
+.listDesign {
+  margin: 20px;
+  border: 1px solid black;
+  font-family: Impact;
+  font-style: italic;
+};
+
+.listDesign__p {
+  border-bottom: 1px solid black;
+};
