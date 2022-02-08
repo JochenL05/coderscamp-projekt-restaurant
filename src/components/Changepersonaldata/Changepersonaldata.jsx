@@ -15,12 +15,31 @@ export default function Form() {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
 
+  // useEffect(() => {
+  //   const storedName = JSON.parse(localStorage.getItem("name"));
+  //   if (storedName) setName(storedName);
+  // }, []);
+
+  // useEffect(() => {
+  //   localStorage.setItem("name", JSON.stringify(name));
+  // }, [name]);
+  //const [valueToSubmit, setValueToSubmit] = useState(()
+
+  const fetchData = async () => {
+    try {
+      const stringified = JSON.stringify(name);
+      localStorage.setItem("changeName", stringified);
+      const changeName = JSON.parse(localStorage.getItem("changeName"));
+      console.log(changeName);
+    } catch (error) {
+      console.log("error", error);
+    }
+  };
+
   useEffect(() => {
-    const storedName = JSON.parse(localStorage.getItem("name"));
-    if (storedName) setName(storedName);
+    fetchData();
   }, []);
 
-  //const [valueToSubmit, setValueToSubmit] = useState(()
   const handleName = (e) => {
     setName(e.target.value);
     setSubmitted(false);
@@ -79,10 +98,6 @@ export default function Form() {
       setError(true);
     }
     setName(() => "");
-
-    useEffect(() => {
-      localStorage.setItem("name", JSON.stringify(name));
-    }, [name]);
   };
 
   const successMessage = () => {
