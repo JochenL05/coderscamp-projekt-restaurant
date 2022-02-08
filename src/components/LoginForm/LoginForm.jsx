@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import "./loginForm.css";
 
 // eslint-disable-next-line react/prop-types
-export default function LoginForm({ Login, error }) {
+export default function LoginForm({ login, error }) {
   const [details, setDetails] = useState({ name: "", email: "", password: "" });
 
   const submitHandler = (e) => {
     e.preventDefault();
 
-    Login(details);
+    login(details);
   };
   return (
     <form className="loginForm" onSubmit={submitHandler}>

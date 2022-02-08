@@ -7,7 +7,7 @@ const RegistrationForm = ({ submitForm }) => {
   const { handleChange, values, handleSubmit, errors, dataIsCorrect } =
     useForm();
   useEffect(() => {
-    dataIsCorrect && submitForm(true);
+    dataIsCorrect && submitForm(values);
   }, [dataIsCorrect]);
   return (
     <div className="mainRegister">
@@ -47,14 +47,14 @@ const RegistrationForm = ({ submitForm }) => {
             <i className="topIcon fas fa-lock"></i>
             <input
               type="password"
-              name="password1"
+              name="password"
               placeholder="password"
               // pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,20})/"
-              id="password1"
-              value={values.password1}
+              id="password"
+              value={values.password}
               onChange={handleChange}
             />
-            {errors.password1 && <p className="error">{errors.password1}</p>}
+            {errors.password && <p className="error">{errors.password}</p>}
           </label>
         </div>
         <div className="inputs">

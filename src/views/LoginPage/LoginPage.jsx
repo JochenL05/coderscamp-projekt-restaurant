@@ -1,35 +1,44 @@
 import React, { useState } from "react";
 import LoginForm from "../../components/LoginForm/LoginForm";
-//import Topbar from "../../components/Topbar/Topbar";
+import Topbar from "../../components/Topbar/Topbar";
 
 export default function LoginPage() {
-  const adminUser = {
-    email: "admin@admin.com",
-    password: "admin123",
-  };
-
   const [user, setUser] = useState({ email: "", password: "" });
 
   const [error, setError] = useState("");
 
-  const Login = (details) => {
-    console.log(details);
-    if (
-      details.email == adminUser.email &&
-      details.password == adminUser.password
-    ) {
-      console.log("Logged in");
-      setUser({
-        name: details.name,
-        email: details.email,
+  const login = (details) => {
+    const usersLoginDetails = JSON.parse(
+      localStorage.getItem("usersLoginDetails")
+    );
+    if (usersLoginDetails) {
+      const emailCheck = usersLoginDetails.filter((el) => {
+        return el.email === details.email;
       });
+      if (emailCheck.length > 0) {
+        if (emailCheck[0].password === details.password) {
+          localStorage.setItem("loggedIn", "true");
+          setUser({
+            name: details.name,
+            email: details.email,
+          });
+          return true;
+        }
+      } else {
+        setError("Login failed, wrong email or password");
+        localStorage.setItem("loggedIn", "false");
+        return false;
+      }
     } else {
       setError("Login failed, wrong email or password");
+      localStorage.setItem("loggedIn", "false");
+      return false;
     }
   };
 
   return (
     <div>
+      <Topbar />
       {user.email != "" ? (
         <div className="welcome">
           <h2>
@@ -38,7 +47,7 @@ export default function LoginPage() {
           </h2>
         </div>
       ) : (
-        <LoginForm Login={Login} error={error} />
+        <LoginForm login={login} error={error} />
       )}
     </div>
   );

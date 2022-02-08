@@ -9,6 +9,7 @@ import Reservations from "./views/Reservations/Reservations";
 import OldOrders from "./views/OldOrders/OldOrders";
 import OldOrderDetails from "./components/OldOrderDetails/OldOrderDetails";
 import Register from "./views/Register/register";
+import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute";
 
 function App() {
   return (
@@ -19,9 +20,17 @@ function App() {
           <Route path="login" element={<LoginPage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path="reservations" element={<Reservations />} />
-          <Route path="orders" element={<OldOrders />} />
+          <Route
+            path="/orders"
+            element={
+              <ProtectedRoute>
+                <OldOrders />
+              </ProtectedRoute>
+            }
+          />
           <Route path="orders/:orderID" element={<OldOrderDetails />} />
           <Route path="register" element={<Register />} />
+          <Route path="*" element={"404 NOT FOUND"} />
         </Routes>
       </div>
     </BrowserRouter>
