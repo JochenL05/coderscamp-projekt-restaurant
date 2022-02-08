@@ -21,7 +21,7 @@ const Context = ({ children }) => {
     console.log(item);
     setCartItems([
       ...cartItems,
-      cartItems.filter((el) => (el.id === item.id ? (el.qty += 1) : el.qty)),
+      cartItems.map((el) => (el.id === item.id ? (el.qty += 1) : el.qty)),
     ]);
     console.log(cartItems);
   };

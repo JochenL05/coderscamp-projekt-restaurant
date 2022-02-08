@@ -17,6 +17,7 @@ const Cart = () => {
       items.map((el) => {
         console.log(el.price);
         sum += el.price;
+        console.log(items);
       });
       return sum;
     });
@@ -41,7 +42,7 @@ const Cart = () => {
   };
 
   const clearCart = () => {
-    localStorage.removeItem("menuItems");
+    localStorage.removeItem("item");
   };
 
   return (
@@ -66,7 +67,12 @@ const Cart = () => {
         <div> Cart is empty</div>
       )}
       <button onClick={clearCart}>Clear Cart</button>
-      <button disabled={items.length === 0}> Checkout </button>
+      <button
+        disabled={items.length === 0}
+        onClick={() => alert("Checkout done!")}
+      >
+        Checkout
+      </button>
       <Footer />
     </>
   );
