@@ -1,6 +1,6 @@
 .googleMap{
     background-color: var(--background-color) ;
-    position: absolute;
+    margin-left: 25%;
     right: 20%;
     padding: 2rem;
 }
