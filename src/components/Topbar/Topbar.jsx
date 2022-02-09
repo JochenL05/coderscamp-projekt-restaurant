@@ -84,12 +84,12 @@ function Topbar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/logout"
+                to="/login"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Wyloguj
+                Log in
               </NavLink>
             </li>
           </ul>
