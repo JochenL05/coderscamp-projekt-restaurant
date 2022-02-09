@@ -1,0 +1,63 @@
+.formGroup{
+    width: 100%;
+}
+
+.contactForm {
+    font-size: 1em;
+}
+.contact_info-header{
+      margin-bottom: 3rem;
+}
+
+input,
+textarea {
+    width: 70%;
+    font-size: 1rem;
+    padding: 10px;
+    background-color:lightgray;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+textarea{
+    min-height: 250px;
+    resize: vertical;
+}
+textarea :hover{
+    color:coral;
+}
+
+.buttonContact{
+
+margin-top: 30px;
+background-color: black;
+color: white;
+font-size: 1.5rem;
+display: inline-block;
+outline: none;
+border: none;
+padding: 10px 20px;
+border-radius: 8px;
+cursor: pointer;
+}
+
+.buttonContact:hover{ 
+  background-color: coral;
+}
+
+@media screen and (max-width: 960px) {
+    input,
+textarea {
+    width: 50%;
+    font-size: 1rem;
+    padding: 15px;
+}
+button{
+    padding: 7px 15px;
+    font-size: 1rem;
+
+}
+
+}
