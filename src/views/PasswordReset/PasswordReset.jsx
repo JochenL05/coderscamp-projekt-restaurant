@@ -11,16 +11,26 @@ const PasswordReset = () => {
         <form className="password-reset-form">
           <h1>Reset your password</h1>
           <div className="form-inputs">
-            <label for="password" className="form-label">
+            <label htmlFor="password" className="form-label">
               Password
             </label>
-            <input type="password" className="form-input" placeholder="Enter your new password" id="password"></input>
+            <input
+              type="password"
+              className="form-input"
+              placeholder="Enter your new password"
+              id="password"
+            ></input>
           </div>
           <div className="form-inputs">
-            <label for="passwordConfirm" className="form-label">
+            <label htmlFor="passwordConfirm" className="form-label">
               Password Confirm
             </label>
-            <input type="password" className="form-input" placeholder="Confirm your password" id="passwordConfirm"></input>
+            <input
+              type="password"
+              className="form-input"
+              placeholder="Confirm your password"
+              id="passwordConfirm"
+            ></input>
           </div>
           <button className="password-reset-btn" type="submit">
             Reset Password
