@@ -10,6 +10,7 @@ import OldOrders from "./views/OldOrders/OldOrders";
 import OldOrderDetails from "./components/OldOrderDetails/OldOrderDetails";
 import Register from "./views/Register/register";
 import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute";
+import Menu from "./views/Menu/Menu";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="orders/:orderID" element={<OldOrderDetails />} />
           <Route path="register" element={<Register />} />
           <Route path="*" element={"404 NOT FOUND"} />
+          <Route path="menu" element={<Menu />} />
         </Routes>
       </div>
     </BrowserRouter>
