@@ -10,16 +10,16 @@
   --background-color-placeholder: #F9F9F9;
 }
 
-.header {
+/* .header {
   font-size: var(--font-size-header);
   text-align: center;
   width: 80%;
   margin-bottom: 1rem;
   margin-top: 1rem;
   color: var(--text-color-black);
-}
+} */
 
-.button {
+/* .button {
   width: 40%;
   height: 50px;
   margin-top: 10px;
@@ -30,4 +30,4 @@
   border: none;
   color: var(--text-color-black);
   font-size: 1rem;
-}
+} */
