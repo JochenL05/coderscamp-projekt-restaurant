@@ -4,7 +4,7 @@
   --text-color-black: #0A0A0B;
   --text-color-grey: #B9B7BD;
 
-  --button-color: #FB7C5C;
+  --button-color: #cb202d;
   --font-size-header: 1.5rem;
 
   --background-color-placeholder: #F9F9F9;
@@ -58,6 +58,7 @@ body {
   font-size: 0.8rem;
   margin-bottom: 6px;
   color: var(--text-color-black);
+  font-weight: bold;
 }
 
 select {
@@ -86,7 +87,13 @@ select {
   font-size: 12px;
 }
 
+p {
+  color: #bf1650;
+}
+
+
 .form-input-btn {
+  padding: 10px;
   width: 40%;
   height: 50px;
   margin-top: 10px;
@@ -96,6 +103,14 @@ select {
   border: none;
   color: var(--text-color-black);
   font-size: 1rem;
+}
+
+.form-input-btn:hover{ 
+  background-color: #BC544B;
+}
+
+.form-input-btn:active{ 
+  transform: scale(0.90);
 }
 
 @media (min-width:640px) and (max-width:1023px) {

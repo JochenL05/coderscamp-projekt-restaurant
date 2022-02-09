@@ -11,7 +11,7 @@ const Homepage = () => {
       <Topbar />
       <Mainview />
       <Description />
-      <h1>Testimonials</h1>
+      <h1>Reviews</h1>
       <Testimonials />
       <Footer />
     </div>
