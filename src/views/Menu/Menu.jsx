@@ -11,7 +11,7 @@ const Menu = () => {
       name: "Margherita",
       price: 21,
       description: "",
-      //image:,
+      //imageUrl: `${pepperoni}`,
     },
     {
       id: 2,
