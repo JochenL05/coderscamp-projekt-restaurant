@@ -20,7 +20,16 @@ body{
     grid-template-rows: auto 1fr;
     margin: 0px 20px;
 }
-.menu-card-image{
+/* .menu-card-image{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr;
+    margin: 0 20px;
+    position: relative;
+    width: 100%;
+} */
+
+img {
     display: grid;
     position: relative;
     grid-template-rows: auto 1fr;
@@ -62,9 +71,9 @@ body{
     align-self: stretch;
 }
 .menucard-orderbutton{
-    padding: 20px 10px;
+    padding: 20px;
     display: grid;
-    grid-template-rows: auto 1fr 50px;
+    /* grid-template-rows: auto 1fr 50px; */
     grid-row-gap: 15px;
     background-color: #cb202d;
     border: none;
@@ -74,3 +83,12 @@ body{
     border-radius: 5px;
     width: 180px;
 }
+
+.menucard-orderbutton:hover{ 
+  background-color: #BC544B;
+}
+
+.menucard-orderbutton:active{ 
+  transform: scale(0.90);
+}
+
