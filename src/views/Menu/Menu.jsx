@@ -2,9 +2,49 @@ import React, { useEffect, useState } from "react";
 import Topbar from "../../components/Topbar/Topbar";
 import Footer from "../../components/Footer/Footer";
 import MenuCard from "../../components/MenuCard/MenuCard";
-import dishes from "../../data/MenuArr";
+import "./Menu.css";
 
 const Menu = () => {
+  const dishes = [
+    {
+      id: 1,
+      name: "Margherita",
+      price: 21,
+      description: "",
+      //imageUrl: `${pepperoni}`,
+    },
+    {
+      id: 2,
+      name: "Capriciosa",
+      price: 25,
+      //   image:
+    },
+    {
+      id: 3,
+      name: "Salame",
+      price: 25,
+      //   image:
+    },
+    {
+      id: 4,
+      name: "Vegetables",
+      price: 25,
+      //   image:
+    },
+    {
+      id: 5,
+      name: "Four cheeses",
+      price: 25,
+      //   image:
+    },
+    {
+      id: 6,
+      name: "Rucola",
+      price: 25,
+      //   image:
+    },
+  ];
+
   const [itemsToDisplay, setItemsToDisplay] = useState([]);
 
   const fetchData = async () => {
@@ -12,6 +52,7 @@ const Menu = () => {
       const stringified = JSON.stringify(dishes);
       localStorage.setItem("menuItems", stringified);
       const menuItems = JSON.parse(localStorage.getItem("menuItems"));
+      console.log(menuItems);
       setItemsToDisplay(menuItems);
     } catch (error) {
       console.log("error", error);
@@ -21,7 +62,6 @@ const Menu = () => {
   useEffect(() => {
     fetchData();
   }, []);
-
   return (
     <>
       <Topbar />
@@ -45,5 +85,4 @@ const Menu = () => {
     </>
   );
 };
-
 export default Menu;

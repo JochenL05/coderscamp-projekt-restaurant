@@ -11,7 +11,7 @@ function Topbar() {
       <nav className="navbar">
         <div className="nav-container">
           <NavLink exact to="/" className="nav-logo">
-            Restauracja
+            Restaurant
           </NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
@@ -23,7 +23,7 @@ function Topbar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Strona Główna
+                Main page
               </NavLink>
             </li>
             <li className="nav-item">
@@ -56,7 +56,7 @@ function Topbar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Rezerwacje
+                Reservations
               </NavLink>
             </li>
             <li className="nav-item">
@@ -67,7 +67,7 @@ function Topbar() {
                 className="nav-links"
                 onClick={handleClick}
               >
-                Kontakt
+                Contact
               </NavLink>
             </li>
             <li className="nav-item">
@@ -84,12 +84,12 @@ function Topbar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/logout"
+                to="/login"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Wyloguj
+                Log in
               </NavLink>
             </li>
           </ul>

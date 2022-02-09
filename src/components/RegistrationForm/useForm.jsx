@@ -5,7 +5,7 @@ const useForm = () => {
   const [values, setValues] = useState({
     username: "",
     email: "",
-    password1: "",
+    password: "",
     password2: "",
   });
 
