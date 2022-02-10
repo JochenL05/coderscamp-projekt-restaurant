@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.mainLeft{
+    text-align: left;
+    text-indent: 20px;
+    display: flex;
+    flex:3;
+    font-size: 20px;
+    line-height: 30px;
+    flex: 2;
+    max-height: 11px; 
+}
+.mainLeft > h4{
+    font-size: 20px;
+    margin-top:20px;
+}
+button{
+    font-size: 20px;
+}
+.topIcon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: black;
+    cursor: pointer;
+  }
+.mainCenter{
+    font-size: 20px;
+    color:black;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    flex: 2;
+    max-height: 11px;
+}
+.mainRight{
+    margin:50px;
+    text-align: right;
+    font-size: 20px;
+    line-height: 30px;
+    flex: 1;
+    max-height: 11px;
+}
+.main-footer {
+    color: black;
+    position: fixed;
+    padding:70 px 0;
+    bottom: 10px;
+    width: 95%;
+    padding: 0 15px;
+  }
+  .row{
+      display:flex;
+      align-items: center;
+  }
+  @media only screen and (max-width: 950px) {
+      .mainLeft{
+          font-size: 15px;
+          flex-wrap: wrap;
+          margin-left: 50px;
+      }
+    .mainLeft {
+          font-size: 15px;
+          flex-wrap: nowrap;
+      }
+      .mainCenter{
+        font-size: 15px;
+        flex-wrap: nowrap;
+    }
+    .mainRight{
+        font-size: 15px;
+        flex-wrap: nowrap;
+    }
+    .main-footer{
+        font-size: 15px;
+        flex-wrap: wrap;
+    }
+    .row{
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    form{
+        width: 20px;
+    }
+    form > input{
+        width: 100px;
+    }
+  }
