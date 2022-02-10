@@ -62,6 +62,17 @@ function Topbar() {
             <li className="nav-item">
               <NavLink
                 exact
+                to="/register"
+                activeClassName="active"
+                className="nav-links"
+                onClick={handleClick}
+              >
+                Register
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
                 to="/contact"
                 activeClassName="active"
                 className="nav-links"
