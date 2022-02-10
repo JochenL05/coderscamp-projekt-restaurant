@@ -12,7 +12,7 @@
 - [Justyna Staniszewska](https://github.com/justynastaniszewska)
 
 ## Strona restauracji
-<img src="./src.img.main.png">
+<img src="src/img/main.png" />
 
 ## Technologie
 
