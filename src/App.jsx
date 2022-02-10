@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
-import Usersettings from "./views/Usersettings/Usersettings";
+import UserSettings from "./views/Usersettings/UserSettings";
 import Context from "./context/Context";
 import Homepage from "./views/Homepage/Homepage";
 import ContactPage from "./views/ContactPage/ContactPage";
@@ -39,7 +39,7 @@ function App() {
             <Route path="menu" element={<Menu />} />
             <Route path="cart" element={<Cart />} />
             <Route path="resetpassword" element={<PasswordReset />} />
-            <Route path="usersettings" element={<Usersettings />} />
+            <Route path="usersettings" element={<UserSettings />} />
           </Routes>
         </div>
       </Context>
