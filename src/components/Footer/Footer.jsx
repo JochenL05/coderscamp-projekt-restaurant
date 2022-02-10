@@ -1,4 +1,4 @@
-import "./footer.css";
+import "./footer2.css";
 import React from "react";
 
 export default function Footer() {

@@ -8,7 +8,15 @@ export default function register() {
   const [formIsSubmit, setFormIsSubmit] = useState(false);
 
   const submitForm = (data) => {
-    console.log(data);
+    const currentUserLoginDetails = localStorage.getItem("usersLoginDetails");
+    if (currentUserLoginDetails) {
+      localStorage.setItem(
+        "usersLoginDetails",
+        `${JSON.stringify([...currentUserLoginDetails, data])}`
+      );
+    } else {
+      localStorage.setItem("usersLoginDetails", `${JSON.stringify([data])}`);
+    }
     setFormIsSubmit(true);
   };
   return (

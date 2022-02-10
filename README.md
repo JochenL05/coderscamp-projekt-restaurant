@@ -1,3 +1,19 @@
+# CodersCamp 2021 | Projekt Zespołowy | REACT
+
+## Zespół projektowy
+
+**Mentor**: [Aleksandra Żochowska](https://github.com/AleksandraZochowska)
+
+**Członkowie zespołu**:
+
+- [Iwona Gorbacz](https://github.com/igorbacz)
+- [Daniela Karwowska](https://github.com/danielakarwowska)
+- [Jochen Lippok](https://github.com/JochenL05)
+- [Justyna Staniszewska](https://github.com/justynastaniszewska)
+
+## Strona restauracji
+<img src="src/img/main.png" />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
