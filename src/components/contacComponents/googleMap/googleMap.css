@@ -1,8 +1,8 @@
 .googleMap{
     background-color: var(--background-color) ;
-    margin-left: 25%;
     right: 20%;
     padding: 2rem;
+    margin-left: 25%;
 }
 
 .pin {
