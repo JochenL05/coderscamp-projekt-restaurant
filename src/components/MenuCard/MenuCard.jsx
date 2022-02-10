@@ -5,27 +5,12 @@ import pizza from "./pizza-pepperoni.jpeg";
 
 /* eslint-disable react/prop-types */
 const MenuCard = ({ dish }) => {
-  const { addToCart, getCurrentItem } = useContext(CartContext);
+  const { addToCart } = useContext(CartContext);
 
   const handleClick = () => {
-    const x = getCurrentItem(dish);
-    console.log(dish);
-    addToCart(x);
+    addToCart(dish);
   };
 
-  // return (
-  //   <div className="menu_menucard">
-  //     {/* <div className="menu_card_image">{dish.image}</div> */}
-  //     <div className="menucard_name">{dish.name}</div>
-  //     <div className="menucard_price">{dish.price}</div>
-  //     <button className="menucard_orderbutton" >
-  //       Add to basket
-  //     </button>
-  //     {/* {added ? <div>in the cart</div> : <div>NOT in the cart</div>} */}
-
-  /* eslint-disable react/prop-types */
-
-  // const MenuCard = ({ dish }) => {
   return (
     <div className="menu_menucard">
       <div className="menu_items">
