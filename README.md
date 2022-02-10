@@ -14,10 +14,6 @@
 ## Strona restauracji
 <img src="src/img/main.png" />
 
-## Technologie
-
-## Aplikację można znaleźć pod poniższym adresem
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
