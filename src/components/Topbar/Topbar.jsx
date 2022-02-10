@@ -92,17 +92,62 @@ function Topbar() {
                 <i className="fas fa-shopping-basket"></i>
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/login"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Log in
-              </NavLink>
-            </li>
+
+            {localStorage.getItem("loggedIn") === "false" && (
+              <li className="nav-item">
+                <NavLink
+                  exact
+                  to="/login"
+                  activeClassName="active"
+                  className="nav-links"
+                  onClick={handleClick}
+                >
+                  Log in
+                </NavLink>
+              </li>
+            )}
+
+            {localStorage.getItem("loggedIn") === "true" && (
+              <li className="nav-item">
+                <NavLink
+                  exact
+                  to="/usersettings"
+                  activeClassName="active"
+                  className="nav-links"
+                  onClick={handleClick}
+                >
+                  Settings
+                </NavLink>
+              </li>
+            )}
+
+            {localStorage.getItem("loggedIn") === "true" && (
+              <li className="nav-item">
+                <NavLink
+                  exact
+                  to="/orders"
+                  activeClassName="active"
+                  className="nav-links"
+                  onClick={handleClick}
+                >
+                  Old orders
+                </NavLink>
+              </li>
+            )}
+
+            {localStorage.getItem("loggedIn") === "true" && (
+              <li className="nav-item">
+                <NavLink
+                  exact
+                  to="/"
+                  activeClassName="active"
+                  className="nav-links"
+                  onClick={handleClick}
+                >
+                  Log out
+                </NavLink>
+              </li>
+            )}
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
