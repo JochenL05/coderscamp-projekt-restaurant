@@ -102,7 +102,7 @@ function Topbar() {
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  Zaloguj się
+                  Log in
                 </NavLink>
               </li>
             )}
@@ -116,7 +116,7 @@ function Topbar() {
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  Ustawienia
+                  Settings
                 </NavLink>
               </li>
             )}
@@ -130,7 +130,7 @@ function Topbar() {
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  Stare zamówienia
+                  Old orders
                 </NavLink>
               </li>
             )}
@@ -144,7 +144,7 @@ function Topbar() {
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  Wyloguj
+                  Log out
                 </NavLink>
               </li>
             )}
