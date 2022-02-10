@@ -11,6 +11,7 @@ import OldOrderDetails from "./components/OldOrderDetails/OldOrderDetails";
 import Register from "./views/Register/register";
 import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute";
 import Menu from "./views/Menu/Menu";
+import PasswordReset from "./views/PasswordReset/PasswordReset";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Route path="register" element={<Register />} />
           <Route path="*" element={"404 NOT FOUND"} />
           <Route path="menu" element={<Menu />} />
+          <Route path="resetpassword" element={<PasswordReset />} />
         </Routes>
       </div>
     </BrowserRouter>
