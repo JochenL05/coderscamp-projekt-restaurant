@@ -13,11 +13,10 @@ const Cart = () => {
   useEffect(() => {
     setTotalPrice(() => {
       let sum = 0;
-      // console.log(items);
+      console.log(items);
       items.map((el) => {
-        // console.log(el.price);
+        console.log(el.price);
         sum += el.price;
-        // console.log(items);
       });
       return sum;
     });
@@ -42,7 +41,7 @@ const Cart = () => {
   };
 
   const clearCart = () => {
-    localStorage.removeItem("item");
+    localStorage.removeItem("menuItems");
   };
 
   return (
@@ -67,12 +66,7 @@ const Cart = () => {
         <div> Cart is empty</div>
       )}
       <button onClick={clearCart}>Clear Cart</button>
-      <button
-        disabled={items.length === 0}
-        onClick={() => alert("Checkout done!")}
-      >
-        Checkout
-      </button>
+      <button disabled={items.length === 0}> Checkout </button>
       <Footer />
     </>
   );

@@ -58,7 +58,6 @@ const Menu = () => {
       const stringified = JSON.stringify(dishes);
       localStorage.setItem("menuItems", stringified);
       const menuItems = JSON.parse(localStorage.getItem("menuItems"));
-      console.log(menuItems);
       setItemsToDisplay(menuItems);
     } catch (error) {
       console.log("error", error);
@@ -68,6 +67,7 @@ const Menu = () => {
   useEffect(() => {
     fetchData();
   }, []);
+
   return (
     <>
       <Topbar />
@@ -91,4 +91,5 @@ const Menu = () => {
     </>
   );
 };
+
 export default Menu;
