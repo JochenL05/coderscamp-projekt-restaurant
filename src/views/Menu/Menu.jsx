@@ -11,36 +11,42 @@ const Menu = () => {
       name: "Margherita",
       price: 21,
       description: "",
+      qty: 0,
       //imageUrl: `${pepperoni}`,
     },
     {
       id: 2,
       name: "Capriciosa",
       price: 25,
+      qty: 0,
       //   image:
     },
     {
       id: 3,
       name: "Salame",
       price: 25,
+      qty: 0,
       //   image:
     },
     {
       id: 4,
       name: "Vegetables",
       price: 25,
+      qty: 0,
       //   image:
     },
     {
       id: 5,
       name: "Four cheeses",
       price: 25,
+      qty: 0,
       //   image:
     },
     {
       id: 6,
       name: "Rucola",
       price: 25,
+      qty: 0,
       //   image:
     },
   ];
@@ -70,10 +76,14 @@ const Menu = () => {
         <div className="menu">
           {itemsToDisplay.length > 0 ? (
             itemsToDisplay.map((dish, index) => {
-              return <MenuCard key={dish.id + index} dish={dish} />;
+              return (
+                <>
+                  <MenuCard key={dish.id + index} dish={dish} />
+                </>
+              );
             })
           ) : (
-            <div></div>
+            <div>Cart is empty</div>
           )}
         </div>
       </div>

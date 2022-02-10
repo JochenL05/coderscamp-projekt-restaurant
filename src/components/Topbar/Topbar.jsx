@@ -84,7 +84,7 @@ function Topbar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/checkout"
+                to="/cart"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
