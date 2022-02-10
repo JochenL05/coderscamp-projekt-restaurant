@@ -1,5 +1,5 @@
 :root{
-  --first-color: #1A73E8;
+  --first-color: #cb202d;
   --input-color: #80868B;
   --border-color: #DADCE0;
 
@@ -27,7 +27,7 @@ h1{
   align-items: center;
   height: 1000px;
 }
-.form{
+.firm{
   width: 1000px;
   padding: 4rem 2rem;
   border-radius: 1rem;

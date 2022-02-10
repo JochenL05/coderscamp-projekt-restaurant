@@ -40,9 +40,9 @@ const Cart = () => {
     setItems(x);
   };
 
-  const clearCart = () => {
-    localStorage.removeItem("menuItems");
-  };
+  // const clearCart = () => {
+  //   localStorage.removeItem("menuItems");
+  // };
 
   return (
     <>
@@ -65,7 +65,7 @@ const Cart = () => {
       ) : (
         <div> Cart is empty</div>
       )}
-      <button onClick={clearCart}>Clear Cart</button>
+      {/* <button onClick={clearCart}>Clear Cart</button> */}
       <button disabled={items.length === 0}> Checkout </button>
       <Footer />
     </>
