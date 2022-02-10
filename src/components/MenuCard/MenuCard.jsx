@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../../context/Context";
 import "./MenuCard.css";
 import pizza from "./pizza-pepperoni.jpeg";
 
 /* eslint-disable react/prop-types */
-
 const MenuCard = ({ dish }) => {
+  const { addToCart } = useContext(CartContext);
+
+  const handleClick = () => {
+    addToCart(dish);
+  };
+
   return (
     <div className="menu_menucard">
       <div className="menu_items">
@@ -17,7 +23,11 @@ const MenuCard = ({ dish }) => {
             <div className="menucard_price">{dish.price}</div>
           </div>
           {/* <div className="menucard-description">{dish.description}</div> */}
-          <button type="submit" className="menucard-orderbutton">
+          <button
+            type="submit"
+            className="menucard-orderbutton"
+            onClick={handleClick}
+          >
             Add to basket
           </button>
         </div>
