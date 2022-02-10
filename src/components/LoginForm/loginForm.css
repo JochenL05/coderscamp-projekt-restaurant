@@ -30,7 +30,7 @@ textarea{
 .login-button{
 width: 100px;
 margin-top: 50px;
-background-color: black;
+background-color: #cb202d;
 color: white;
 font-size: 1rem;
 display: inline-block;
@@ -41,7 +41,11 @@ border-radius: 8px;
 }
 
 .login-button:hover{ 
-  background-color: coral;
+  background-color: #BC544B;
+}
+
+.login-button:active{ 
+  transform: scale(0.90);
 }
 
 .error{

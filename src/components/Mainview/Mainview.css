@@ -17,6 +17,7 @@ background-image: url(https://www.leppfarmmarket.com/wp-content/uploads/2021/01/
   display: block;
   align-items: center;
   line-height: var(--component-lenght);
+  color: white;
 }
 
 .main__button {
@@ -24,7 +25,7 @@ background-image: url(https://www.leppfarmmarket.com/wp-content/uploads/2021/01/
   border: 0px solid #000000;
   border-radius: 1.5rem;
   box-sizing: border-box;
-  color: #0d172a;
+  color: #cb202d;
   cursor: pointer;
   display: inline-block;
   font-size: 1.1rem;
@@ -39,7 +40,7 @@ background-image: url(https://www.leppfarmmarket.com/wp-content/uploads/2021/01/
 }
 
 .main__button:hover {
-  background-color: #06073d;
+  background-color: #cb202d;
   color: #fff;
 }
 
