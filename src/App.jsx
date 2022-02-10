@@ -13,6 +13,7 @@ import Register from "./views/Register/register";
 import Menu from "./views/Menu/Menu";
 import Cart from "./views/Cart/Cart";
 import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute";
+import PasswordReset from "./views/PasswordReset/PasswordReset";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Route path="*" element={"404 NOT FOUND"} />
             <Route path="menu" element={<Menu />} />
             <Route path="cart" element={<Cart />} />
+            <Route path="resetpassword" element={<PasswordReset />} />
           </Routes>
         </div>
       </Context>

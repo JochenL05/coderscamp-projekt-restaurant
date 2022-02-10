@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./loginForm.css";
+import { Link } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 export default function LoginForm({ login, error }) {
@@ -51,7 +52,9 @@ export default function LoginForm({ login, error }) {
           Sign in
         </button>
       </form>
-      <button className="login-button"> Reset your password</button>
+      <Link to={`/resetpassword`}>
+        <button className="login-button"> Reset your password</button>
+      </Link>
     </div>
   );
 }
