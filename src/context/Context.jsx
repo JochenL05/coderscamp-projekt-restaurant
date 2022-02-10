@@ -18,20 +18,38 @@ const Context = ({ children }) => {
     //   });
     //   return items;
     // });
+    let newArr = [];
+    if (cartItems.length > 0) {
+      newArr = cartItems.map((el) => {
+        if (el.id === item.id) {
+          el.qty += 1;
+        }
+        return el;
+      });
+    } else {
+      newArr = [item];
+    }
     console.log(item);
-    setCartItems([
-      ...cartItems,
-      cartItems.map((el) => (el.id === item.id ? (el.qty += 1) : el.qty)),
-    ]);
-    console.log(cartItems);
+    setCartItems([...newArr]);
+    console.log(newArr);
   };
 
   const getCurrentItems = () => {
+    // console.log("cartItems");
+    // console.log(cartItems);
     return cartItems;
   };
 
+  const getCurrentItem = (item) => {
+    return cartItems.filter((el) => {
+      return el.id === item.id;
+    });
+  };
+
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, getCurrentItems }}>
+    <CartContext.Provider
+      value={{ cartItems, addToCart, getCurrentItems, getCurrentItem }}
+    >
       {children}
     </CartContext.Provider>
   );

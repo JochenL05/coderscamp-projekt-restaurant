@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
 //import Usersettings from "./views/Usersettings/Usersettings";
-// import Context from "./context/Context";
+import Context from "./context/Context";
 import Homepage from "./views/Homepage/Homepage";
 import ContactPage from "./views/ContactPage/ContactPage";
 import LoginPage from "./views/LoginPage/LoginPage";
@@ -17,27 +17,29 @@ import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="login" element={<LoginPage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="reservations" element={<Reservations />} />
-          <Route
-            path="/orders"
-            element={
-              <ProtectedRoute>
-                <OldOrders />
-              </ProtectedRoute>
-            }
-          />
-          <Route path="orders/:orderID" element={<OldOrderDetails />} />
-          <Route path="register" element={<Register />} />
-          <Route path="*" element={"404 NOT FOUND"} />
-          <Route path="menu" element={<Menu />} />
-          <Route path="cart" element={<Cart />} />
-        </Routes>
-      </div>
+      <Context>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="login" element={<LoginPage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="reservations" element={<Reservations />} />
+            <Route
+              path="/orders"
+              element={
+                <ProtectedRoute>
+                  <OldOrders />
+                </ProtectedRoute>
+              }
+            />
+            <Route path="orders/:orderID" element={<OldOrderDetails />} />
+            <Route path="register" element={<Register />} />
+            <Route path="*" element={"404 NOT FOUND"} />
+            <Route path="menu" element={<Menu />} />
+            <Route path="cart" element={<Cart />} />
+          </Routes>
+        </div>
+      </Context>
     </BrowserRouter>
   );
 }

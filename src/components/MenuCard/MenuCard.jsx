@@ -5,10 +5,12 @@ import pizza from "./pizza-pepperoni.jpeg";
 
 /* eslint-disable react/prop-types */
 const MenuCard = ({ dish }) => {
-  const { addToCart } = useContext(CartContext);
+  const { addToCart, getCurrentItem } = useContext(CartContext);
 
   const handleClick = () => {
-    addToCart(dish);
+    const x = getCurrentItem(dish);
+    console.log(dish);
+    addToCart(x);
   };
 
   // return (
